@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_ãƒ‡ã‚¶ã‚¤ãƒ³" data-name="ãƒ‡ã‚¶ã‚¤ãƒ³" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.41 29.42">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #aa1e14;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <polyline class="cls-1" points="11.5 6.92 .5 6.92 .5 28.92 22.5 28.92 22.5 17.92"/>
+  <g>
+    <line class="cls-1" x1="11.53" y1="17.92" x2="28.97" y2=".48"/>
+    <path class="cls-1" d="M29.06,.46c-3.44,3.44-3.44,9.02,0,12.46"/>
+    <path class="cls-1" d="M28.96,.35c-3.44,3.44-9.02,3.44-12.46,0"/>
+  </g>
+</svg>
