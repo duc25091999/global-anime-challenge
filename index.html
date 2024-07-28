@@ -86,10 +86,10 @@
             <hr class="step-out-border">
         </section>
         <section id="new-section">
-            <div class="d-flex new-section-container">
+            <div class="new-section-container">
                 <div class="new-section-header">
-                    <p class="color-primary" >お知らせ</p>
-                    <p class="color-primary" >News</p>
+                    <p class="color-primary">お知らせ</p>
+                    <p class="color-primary">News</p>
                 </div>
                 <div class="flex-1 news-content-list">
                     <div class="d-flex news-content">
@@ -116,12 +116,12 @@
         </section>
 
         <section id="goal-section">
-            <div class="d-flex goal-section-container" style="justify-content: space-between;">
+            <div class="goal-section-container" style="justify-content: space-between;">
                 <div class="goal-section-header">
                     <p class="color-primary">プロジェクト趣旨</p>
                     <p class="color-primary">Project Goals</p>
                 </div>
-                <div style="max-width: 850px;font-size: 20px;">
+                <div class="goal-list">
                     <p>
                         日本アニメは今や世界中から注目を集めています｡しかし､この業界を支える優秀な人材は日々の業務に追われており､グローバルな視点を養う機会は限られています｡
                         今後､日本アニメが国際市場で存在感を一層高めていくためには､
@@ -161,62 +161,51 @@
                     </p>
                 </div>
             </div>
-            <div class="d-flex">
-                <div style="width: 286px; display: flex; flex-direction: column; gap:20px; margin-top: -420px;">
+            <div class="goal-container">
+                <div class="goal-label">
                     <img src="./assets/vertical-big-open-bracket.svg">
-                    <div class="d-flex" style="justify-content: center;">
-                        <div class="vertical-text" style="font-size: 26px;">
-                            <p>一緒に挑戦しましょう！</p>
-                        </div>
-                        <div class="vertical-text" style="font-size: 26px;">
-                            <p>未来のアニメ業界のため、</p>
-                        </div>
-                        <div class="vertical-text" style="font-size: 26px;">
-                            <p>奮ってご応募ください。</p>
-                        </div>
-                        <div class="vertical-text" style="font-size: 26px;">
-                            <p>募集要件をよくご確認の上、　</p>
-                        </div>
-                        <div class="vertical-text" style="font-size: 26px;">
-                            <p>参加できるのは、６名。</p>
-                        </div>
-                    </div>
+                    <img src="./assets/goal-label-content.svg">
                     <img src="./assets/vertical-big-close-bracket.svg">
                 </div>
-                <hr style="flex:1;border: none; height: 2px; background-color: #AA1E14; margin-top: 120px;">
+                <hr class="goal-border">
             </div>
         </section>
 
-        <section id="new-section" style="padding: 120px 200px 0px 320px;">
-            <div class="d-flex" style="justify-content: space-between;">
-                <div>
-                    <p class="color-primary" style="font-size: 36px;">応募条件</p>
-                    <p class="color-primary" style="font-size: 26px;">Application Requirements</p>
+        <section id="requirement-section">
+            <div class="requirement-section-container">
+                <div class="requirement-section-header">
+                    <p class="color-primary">応募条件</p>
+                    <p class="color-primary">Application Requirements</p>
                 </div>
-                <div class="flex-1" style="max-width: 850px;font-size: 20px;">
-                    <p class="color-primary">育成対象</p>
-                    <p>アニメーター、演出家／監督、プロデューサー</p>
-                    <br />
-                    <p class="color-primary">人数</p>
-                    <p>6 名</p>
-                    <br />
-                    <p class="color-primary">必須要件</p>
-                    <p><span class="color-primary">・</span>20～30歳台を中心に。</p>
-                    <p><span class="color-primary">・</span>アニメ制作会社の経営者やプロデューサーからの推薦。</p>
-                    <p><span class="color-primary">・</span>アニメ制作会社に所属し、すでにある程度のプロとして実績を有すること。</p>
-                    <p><span class="color-primary">※</span>フリーランスの場合は、本事業に参加する間は制作会社に所属することが条件。</p>
-                    <br />
-                    <p class="color-primary">歓迎要件</p>
-                    <p><span class="color-primary">・</span>高いコミュニケーション能力や発信力。</p>
-                    <p><span class="color-primary">・</span>新しいスキルに対する高い習得意欲。</p>
-                    <p><span class="color-primary">・</span>アート系ではなく、商業アニメを中心とした業績。</p>
-                    <br />
-                    <p class="color-primary">選考方法</p>
-                    <p><span class="color-primary">・</span>1カ月程度の間、本ウェブサイトで公募。</p>
-                    <p><span class="color-primary">・</span>アニメ制作会社からの推薦、自己推薦ともに事務局で受付。</p>
-                    <p><span class="color-primary">・</span>事務局スタッフと指導者の協議により育成対象者を選定。</p>
-                    <p><span class="color-primary">※</span>応募者の業績、推薦状、応募理由書のほか、必要に応じて面接を実施し判断。</p>
-                    <br />
+                <div class="flex-1 requirement-list">
+                    <div class="requirement-item">
+                        <p class="color-primary">育成対象</p>
+                        <p>アニメーター、演出家／監督、プロデューサー</p>
+                    </div>
+                    <div class="requirement-item">
+                        <p class="color-primary">人数</p>
+                        <p>6 名</p>
+                    </div>
+                    <div class="requirement-item">
+                        <p class="color-primary">必須要件</p>
+                        <p><span class="color-primary">・</span>20～30歳台を中心に。</p>
+                        <p><span class="color-primary">・</span>アニメ制作会社の経営者やプロデューサーからの推薦。</p>
+                        <p><span class="color-primary">・</span>アニメ制作会社に所属し、すでにある程度のプロとして実績を有すること。</p>
+                        <p><span class="color-primary">※</span>フリーランスの場合は、本事業に参加する間は制作会社に所属することが条件。</p>
+                    </div>
+                    <div class="requirement-item">
+                        <p class="color-primary">歓迎要件</p>
+                        <p><span class="color-primary">・</span>高いコミュニケーション能力や発信力。</p>
+                        <p><span class="color-primary">・</span>新しいスキルに対する高い習得意欲。</p>
+                        <p><span class="color-primary">・</span>アート系ではなく、商業アニメを中心とした業績。</p>
+                    </div>
+                    <div class="requirement-item">
+                        <p class="color-primary">選考方法</p>
+                        <p><span class="color-primary">・</span>1カ月程度の間、本ウェブサイトで公募。</p>
+                        <p><span class="color-primary">・</span>アニメ制作会社からの推薦、自己推薦ともに事務局で受付。</p>
+                        <p><span class="color-primary">・</span>事務局スタッフと指導者の協議により育成対象者を選定。</p>
+                        <p><span class="color-primary">※</span>応募者の業績、推薦状、応募理由書のほか、必要に応じて面接を実施し判断。</p>
+                    </div>
                     <p class="color-primary">スケジュール</p>
                     <table>
                         <tr>
@@ -253,17 +242,17 @@
                     </table>
                 </div>
             </div>
-            <hr style="border: none; height: 2px; background-color: #AA1E14; margin-top: 120px;">
+            <hr class="requirement-section-border">
         </section>
 
-        <section id="advisor-section" style="padding: 120px 200px 0px 320px;">
-            <div class="d-flex" style="justify-content: space-between;">
-                <div>
-                    <p class="color-primary" style="font-size: 36px;">プログラム指導者</p>
-                    <p class="color-primary" style="font-size: 26px;">Program Advisors</p>
+        <section id="advisor-section">
+            <div class="advior-section-container">
+                <div class="advisor-section-header">
+                    <p class="color-primary">プログラム指導者</p>
+                    <p class="color-primary">Program Advisors</p>
                 </div>
-                <div class="flex-1" style="max-width: 850px;font-size: 20px;">
-                    <div class="d-flex" style="gap: 24px; justify-content: space-between;">
+                <div class="advisor-list">
+                    <div class="advisor-item">
                         <div>
                             <p>植田益朗／ウエダマスオ</p>
                             <p>UEDA Masuo</p>
@@ -274,9 +263,8 @@
                         </div>
                         <img src="./assets/advisor-1.png">
                     </div>
-                    <hr
-                        style="border: none; height: 1px; background-color: #B4B4B4; margin-top: 40px; margin-bottom: 40px;">
-                    <div class="d-flex" style="gap: 24px; justify-content: space-between;">
+                    <hr>
+                    <div class="advisor-item">
                         <div>
                             <p>数土直志／スドタダシ</p>
                             <p>SUDO Tadashi</p>
@@ -290,62 +278,46 @@
                     </div>
                 </div>
             </div>
-            <hr style="border: none; height: 2px; background-color: #AA1E14; margin-top: 120px;">
+            <hr class="advior-section-border">
         </section>
 
-        <section id="faq-section" style="padding: 120px 200px 0px 320px;">
-            <div class="d-flex" style="justify-content: space-between;">
-                <div>
-                    <p class="color-primary" style="font-size: 36px;">よくある質問</p>
-                    <p class="color-primary" style="font-size: 26px;">FAQ</p>
+        <section id="faq-section">
+            <div class="faq-section-container">
+                <div class="faq-section-header">
+                    <p class="color-primary">よくある質問</p>
+                    <p class="color-primary">FAQ</p>
                 </div>
-                <div class="flex-1" style="max-width: 850px;font-size: 20px;">
-                    <div class="d-flex" style="gap: 20px;">
-                        <p style="padding-top: 8px;">Q.</p>
+                <div class="faq-list">
+                    <div class="faq-item odd">
+                        <p>Q.</p>
                         <p>応募条件には、一定の業績が求められるとありますが、具体的にはどの程度の業績でしょうか。</p>
                     </div>
-                    <br />
-                    <div class="d-flex" style="gap: 20px;">
-                        <p style="padding-top: 8px;">A.</p>
+                    <div class="faq-item">
+                        <p>A.</p>
                         <p class="color-primary">定量的な基準はございません。業績については相対評価を行う予定です。</p>
                     </div>
-                    <hr
-                        style="border: none; height: 1px; background-color: #B4B4B4; margin-top: 40px; margin-bottom: 40px;">
-
-                    <div class="d-flex" style="gap: 20px;">
-                        <p style="padding-top: 8px;">Q.</p>
+                    <hr>
+                    <div class="faq-item odd">
+                        <p>Q.</p>
                         <p>地方に居住している者でも、応募できますか。</p>
                     </div>
-                    <br />
-                    <div class="d-flex" style="gap: 20px;">
-                        <p style="padding-top: 8px;">A.</p>
+                    <div class="faq-item">
+                        <p>A.</p>
                         <p class="color-primary">可能です。育成対象者に選ばれた場合には、海外派遣前ワークショップやマンツーマンの英語特訓にはオンラインで参加できます。</p>
                     </div>
-
-                    <hr
-                        style="border: none; height: 1px; background-color: #B4B4B4; margin-top: 40px; margin-bottom: 40px;">
-                    <div class="d-flex" style="gap: 20px;">
-                        <p style="padding-top: 8px;">Q.</p>
+                    <hr>
+                    <div class="faq-item odd">
+                        <p>Q.</p>
                         <p>ウェブサイトで掲載されている情報よりも、もっと知りたい場合にどうすればよいでしょうか。</p>
                     </div>
-                    <br />
-                    <div class="d-flex" style="gap: 20px;">
-                        <p style="padding-top: 8px;">A.</p>
+                    <div class="faq-item">
+                        <p>A.</p>
                         <p class="color-primary">お問い合わせフォームでご質問下さい。</p>
                     </div>
 
                     <a href="#" class="custom-button">
                         お問い合わせはこちら
-                        <svg class="icon" id="_ãƒ‡ã‚¶ã‚¤ãƒ³" data-name="ãƒ‡ã‚¶ã‚¤ãƒ³" xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 29.41 29.42">
-                            <defs>
-                                <style>
-                                    .cls-1 {
-                                        fill: none;
-                                        stroke-miterlimit: 10;
-                                    }
-                                </style>
-                            </defs>
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.41 29.42">
                             <polyline class="cls-1" points="11.5 6.92 .5 6.92 .5 28.92 22.5 28.92 22.5 17.92" />
                             <g>
                                 <line class="cls-1" x1="11.53" y1="17.92" x2="28.97" y2=".48" />

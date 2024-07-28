@@ -290,7 +290,7 @@ table tr,
 table td {
     border: 2px solid white;
     text-align: left;
-    padding: 12px;
+    padding: 25px;
 }
 
 table tr {
@@ -326,7 +326,6 @@ table tr.highlight td {
 
 .custom-button .icon {
     width: 20px;
-    stroke: #aa1e14;
     transition: all 0.3s, color 0.3s;
     position: absolute;
     right: 24px;
@@ -337,7 +336,12 @@ table tr.highlight td {
     color: white;
 }
 
-.custom-button:hover .icon {
+.custom-button .icon * {
+    stroke: #AA1E14;
+}
+
+
+.custom-button:hover .icon * {
     stroke: white;
 }
 
@@ -432,26 +436,42 @@ table tr.highlight td {
     margin-top: 240px;
 }
 
-#new-section {
+#new-section,
+#requirement-section,
+#goal-section,
+#advisor-section,
+#faq-section {
     padding: 120px 200px 0px 320px;
 }
 
 .new-section-container,
-.goal-section-container {
+.goal-section-container,
+.requirement-section-container,
+.advior-section-container,
+.faq-section-container {
+    display: flex;
     justify-content: space-between;
 }
 
 .new-section-header p:nth-child(1),
-.goal-section-header p:nth-child(1) {
+.goal-section-header p:nth-child(1),
+.requirement-section-header p:nth-child(1),
+.advisor-section-header p:nth-child(1),
+.faq-section-header p:nth-child(1) {
     font-size: 36px;
 }
 
 .new-section-header p:nth-child(2),
-.goal-section-header p:nth-child(2) {
+.goal-section-header p:nth-child(2),
+.requirement-section-header p:nth-child(2),
+.advisor-section-header p:nth-child(2),
+.faq-section-header p:nth-child(2) {
     font-size: 26px;
 }
 
-.news-content-list {
+.news-content-list,
+.goal-list,
+.requirement-list {
     max-width: 850px;
     font-size: 20px;
 }
@@ -471,9 +491,102 @@ table tr.highlight td {
     margin-top: 120px;
 }
 
-#goal-section {
-    padding: 120px 200px 0px 320px;
+.goal-label {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    margin-top: -430px;
+    align-items: center;
 }
+
+.goal-label img:nth-child(2) {
+    width: 216px;
+}
+
+.goal-label img:nth-child(1),
+.goal-label img:nth-child(3) {
+    width: 320px;
+}
+
+.goal-border {
+    flex: 1;
+    border: none;
+    height: 2px;
+    background-color: #AA1E14;
+    margin-top: 120px;
+}
+
+.requirement-item {
+    margin-bottom: 80px;
+}
+
+.requirement-section-border {
+    border: none;
+    height: 2px;
+    background-color: #AA1E14;
+    margin-top: 120px;
+}
+
+.advisor-list {
+    flex: 1;
+    max-width: 850px;
+    font-size: 20px;
+}
+
+.advisor-item {
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+}
+
+.advisor-list hr {
+    border: none;
+    height: 1px;
+    background-color: #B4B4B4;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.advior-section-border {
+    border: none;
+    height: 2px;
+    background-color: #AA1E14;
+    margin-top: 120px;
+}
+
+.faq-list {
+    flex: 1;
+    max-width: 850px;
+    font-size: 20px;
+}
+
+.faq-item {
+    display: flex;
+    gap: 20px;
+}
+
+.faq-item {
+    display: flex;
+    gap: 20px;
+}
+
+.faq-item.odd {
+    margin-bottom: 80px;
+}
+
+.faq-item :nth-child(1) {
+    padding-top: 9px;
+}
+
+.faq-list hr {
+    border: none;
+    height: 1px;
+    background-color: #B4B4B4;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
 
 /* @keyframes scrollVertical {
     0% {
@@ -577,17 +690,24 @@ table tr.highlight td {
         margin-left: 35px;
     }
 
-    #new-section {
+    #new-section,
+    #requirement-section {
         padding: 40px 0 0 35px;
     }
 
     .new-section-container,
-    .goal-section-container {
+    .goal-section-container,
+    .requirement-section-container,
+    .advior-section-container,
+    .faq-section-container {
         flex-direction: column;
     }
 
     .new-section-header,
-    .goal-section-header {
+    .goal-section-header,
+    .requirement-section-header,
+    .advisor-section-header,
+    .faq-section-header {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -595,12 +715,18 @@ table tr.highlight td {
     }
 
     .new-section-header p:nth-child(1),
-    .goal-section-header p:nth-child(1) {
+    .goal-section-header p:nth-child(1),
+    .requirement-section-header p:nth-child(1),
+    .advisor-section-header p:nth-child(1),
+    .faq-section-header p:nth-child(1) {
         font-size: 14px;
     }
 
     .new-section-header p:nth-child(2),
-    .goal-section-header p:nth-child(2) {
+    .goal-section-header p:nth-child(2),
+    .requirement-section-header p:nth-child(2),
+    .advisor-section-header p:nth-child(2),
+    .faq-section-header p:nth-child(2) {
         font-size: 10px;
     }
 
@@ -616,8 +742,118 @@ table tr.highlight td {
         margin-top: 45px;
     }
 
-    #goal-section {
+    #goal-section,
+    #advisor-section,
+    #faq-section {
         padding: 40px 0px 0px 35px;
+    }
+
+    .goal-list p {
+        font-size: 10px;
+    }
+
+    .goal-container {
+        position: relative;
+    }
+
+    .goal-border {
+        margin-top: 300px;
+    }
+
+    .goal-label {
+        width: 150px;
+        position: absolute;
+        gap: 30px;
+        margin-top: -260px;
+        right: 25px;
+    }
+
+    .goal-label img:nth-child(2) {
+        width: 95px;
+    }
+
+    .goal-label img:nth-child(1),
+    .goal-label img:nth-child(3) {
+        width: 150px;
+    }
+
+    .goal-label img:nth-child(3) {
+        background-color: white;
+    }
+
+    .requirement-list {
+        font-size: 10px;
+    }
+
+    .requirement-item {
+        margin-bottom: 25px;
+    }
+
+    .requirement-list table {
+        margin-top: 10px;
+        font-size: 10px;
+        min-width: 100%
+    }
+
+    .requirement-list table td {
+        padding: 30px 25px;
+    }
+
+    .highlight td {
+        padding: 12px 62px;
+    }
+
+    .requirement-section-border {
+        background-color: #AA1E14;
+        margin-top: 30px;
+    }
+
+    .advisor-item p {
+        font-size: 10px;
+    }
+
+    .advisor-item img {
+        width: 50%;
+    }
+
+    .advisor-list hr {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .advior-section-border {
+        margin-top: 50px;
+    }
+
+    .faq-list {
+        font-size: 10px;
+    }
+
+    .faq-item :nth-child(1) {
+        padding-top: 4px;
+    }
+
+    .faq-list hr {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .faq-item.odd {
+        margin-bottom: 25px;
+    }
+
+    .custom-button {
+        margin-top: 50px;
+        font-size: 10px;
+        padding: 14px;
+        border: 1px solid #AA1E14;
+    } 
+    .custom-button .icon{
+        width: 14px;
+        right: 14px;
+    }
+    hr {
+        height: 1px !important;
     }
 }
 
