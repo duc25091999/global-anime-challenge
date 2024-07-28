@@ -26,23 +26,34 @@
     <div class="content">
         <section id="homepage-section">
             <div class="absolute-top-left d-flex h-100 flex-direction-column">
-                <img src="./assets/title.png" alt="Global Anime Challenge">
-                <div class="flex-1 center-content-vertical">
+                <img class="content-title" src="./assets/title.png" alt="Global Anime Challenge">
+                <div class="floating-logo">
                     <img src="./assets/section-1.png" alt="Global Anime Challenge">
                 </div>
             </div>
-            <div class="absolute-top-right">
+            <div class="floating-logo-mobile">
+                <img src="./assets/section-1.png" alt="Global Anime Challenge">
+            </div>
+            <div class="absolute-top-right hamburgur-menu">
                 <img src="./assets/hamburgur.png" alt="Global Anime Challenge">
-                <p style="font-size: 24px;">menu</p>
+                <p>menu</p>
             </div>
             <div class="absolute-center">
-                <img class="spinning" src="./assets/logo.png" alt="Global Anime Challenge">
+                <img class="spinning spinning-logo" src="./assets/logo.png" alt="Global Anime Challenge">
             </div>
-            <div class="absolute-bottom-right">
-                <p class="py-3 px-4" style="font-size: 11px;">文化芸術活動基盤強化基金（クリエイター等育成・文化施設高付加価値化支援事業）| 独立行政法人日本芸術文化振興会
-                </p>
+            <div class="absolute-bottom-right home-description">
+                <img class="desktop" src="./assets/home-description.svg">
+                <img class="mobile" src="./assets/home-description-mobile.svg">
             </div>
-            <div class="absolute-bottom-left left-320px d-flex flex-direction-column" style="align-items: center;">
+            <div class="scroll-logo-mobile">
+                <div class="d-flex" style="gap: 25px; flex-direction: column;margin-bottom: 15px; align-items: center;">
+                    <img width="35px" src="./assets/mobile-vertical-open-bracket.svg">
+                    <p style="align-content: center; font-size: 14px;" class="bold">scroll</p>
+                    <img width="35px" src="./assets/mobile-vertical-close-bracket.svg">
+                </div>
+                <img width="40px" src="./assets/arrow-down.png" alt="Scroll down">
+            </div>
+            <div class="scroll-logo">
                 <div class="d-flex" style="gap: 120px;">
                     <img height="80px" src="./assets/small-open-bracket.svg">
                     <p style="align-content: center; font-size: 24px;" class="bold">scroll</p>
@@ -51,40 +62,39 @@
                 <img width="100px" src="./assets/arrow-down.png" alt="Scroll down">
             </div>
         </section>
-        <section id="step-out-section" style="padding: 200px 200px 0px 320px;">
-            <p style="font-size: 85px; text-align: center;transform: rotate(-5deg); margin-bottom: 80px;"
-                class="color-primary">Step out to
+        <section id="step-out-section">
+            <p class="color-primary step-out-title">Step out to
                 inspire the Creative</p>
-            <div class="d-flex" style="justify-content: end;">
-                <div class="vertical-text color-primary" style="font-size: 52px;">
-                    <p>クリエイティブ</p>
+            <div class="d-flex step-out-description">
+                <div class="d-flex">
+                    <div class="vertical-text color-primary" style="font-size: 52px;">
+                        <p>クリエイティブ</p>
+                    </div>
+                    <div class="vertical-text color-primary" style="font-size: 52px;">
+                        <p>芽吹く</p>
+                    </div>
+                    <div class="vertical-text color-primary" style="font-size: 52px;">
+                        <p>一歩飛び出し</p>
+                    </div>
                 </div>
-                <div class="vertical-text color-primary" style="font-size: 52px;">
-                    <p>芽吹く</p>
-                </div>
-                <div class="vertical-text color-primary" style="font-size: 52px;">
-                    <p>一歩飛び出し</p>
-                </div>
-                <div class="d-flex" style="gap: 160px; align-items: center;">
-                    <img height="308px" src="./assets/big-open-bracket.png">
-                    <p style="font-size: 34px; max-width: 392px;">世界を知り､己を知る
-                        日本アニメの若い才能を
-                        後押しするプロジェクト</p>
-                    <img height="308px" src="./assets/big-close-bracket.png">
+                <div class="d-flex step-out-content">
+                    <img class="open-bracket" src="./assets/big-open-bracket.png">
+                    <img class="quote" src="./assets//step-out-quote.svg">
+                    <img class="close-bracket" src="./assets/big-close-bracket.png">
                 </div>
             </div>
-            <hr style="border: none; height: 2px; background-color: #AA1E14; margin-top: 240px;">
+            <hr class="step-out-border">
         </section>
-        <section id="new-section" style="padding: 120px 200px 0px 320px;">
-            <div class="d-flex" style="justify-content: space-between;">
-                <div>
-                    <p class="color-primary" style="font-size: 36px;">お知らせ</p>
-                    <p class="color-primary" style="font-size: 26px;">News</p>
+        <section id="new-section">
+            <div class="d-flex new-section-container">
+                <div class="new-section-header">
+                    <p class="color-primary" >お知らせ</p>
+                    <p class="color-primary" >News</p>
                 </div>
-                <div class="flex-1" style="max-width: 850px;font-size: 20px;">
-                    <div class="d-flex" style="gap: 24px;">
-                        <p class="color-primary" style="margin-top: 8px;">2024.07.31</p>
-                        <p class="color-primary" style="margin-top: 8px;">Wed</p>
+                <div class="flex-1 news-content-list">
+                    <div class="d-flex news-content">
+                        <p class="color-primary news-content-time">2024.07.31</p>
+                        <p class="color-primary news-content-time">Wed</p>
                         <p>
                             グローバル・アニメ・チャレンジ事業内容説明会開催<br />
                             日時：2024年7月31日（水）　16:00～<br />
@@ -93,25 +103,25 @@
                     </div>
                     <hr
                         style="border: none; height: 1px; background-color: #B4B4B4; margin-top: 20px; margin-bottom: 20px;">
-                    <div class="d-flex" style="gap: 24px;">
-                        <p class="color-primary" style="margin-top: 8px;">2024.08.31</p>
-                        <p class="color-primary" style="margin-top: 8px;">Sat</p>
+                    <div class="d-flex news-content">
+                        <p class="color-primary news-content-time">2024.08.31</p>
+                        <p class="color-primary news-content-time">Sat</p>
                         <p>
                             ダミーグローバル・アニメ・チャレンジ事業内容説明会
                         </p>
                     </div>
                 </div>
             </div>
-            <hr style="border: none; height: 2px; background-color: #AA1E14; margin-top: 120px;">
+            <hr class="news-border">
         </section>
 
-        <section id="goal-section" style="padding: 120px 200px 0px 320px;">
-            <div class="d-flex" style="justify-content: space-between;">
-                <div>
-                    <p class="color-primary" style="font-size: 36px;">プロジェクト趣旨</p>
-                    <p class="color-primary" style="font-size: 26px;">Project Goals</p>
+        <section id="goal-section">
+            <div class="d-flex goal-section-container" style="justify-content: space-between;">
+                <div class="goal-section-header">
+                    <p class="color-primary">プロジェクト趣旨</p>
+                    <p class="color-primary">Project Goals</p>
                 </div>
-                <div class="flex-1" style="max-width: 850px;font-size: 20px;">
+                <div style="max-width: 850px;font-size: 20px;">
                     <p>
                         日本アニメは今や世界中から注目を集めています｡しかし､この業界を支える優秀な人材は日々の業務に追われており､グローバルな視点を養う機会は限られています｡
                         今後､日本アニメが国際市場で存在感を一層高めていくためには､
@@ -473,7 +483,8 @@
                         <p style="font-size: 18px;">HATOOKA Momoko</p>
                     </div>
                     <div style="width: 40%;">
-                        <p style="font-size: 14px;">ダミニュータイプ編集部に18年在籍。近年ではKADOKAWA社内の"Newtype海外展開プロジェクト"のコアメンバーを務め、アニメエキスポで来場者向けのカスタムマガジンを発行・配布している。アイマート講演『アニメカルチャーをいかに海外に伝えるか－国内メディアの挑戦－』。書籍に『犬王アニメーションガイド』『平家物語アニメーションガイド』『キルラキル神衣万象』『リトルウィッチアカデミアクロニクル』『上坂すみれ写真集UESAKA
+                        <p style="font-size: 14px;">
+                            ダミニュータイプ編集部に18年在籍。近年ではKADOKAWA社内の"Newtype海外展開プロジェクト"のコアメンバーを務め、アニメエキスポで来場者向けのカスタムマガジンを発行・配布している。アイマート講演『アニメカルチャーをいかに海外に伝えるか－国内メディアの挑戦－』。書籍に『犬王アニメーションガイド』『平家物語アニメーションガイド』『キルラキル神衣万象』『リトルウィッチアカデミアクロニクル』『上坂すみれ写真集UESAKA
                             JAPAN』『中島かずきと役者人」など。</p>
                     </div>
 
