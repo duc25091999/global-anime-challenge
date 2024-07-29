@@ -47,3 +47,53 @@ document.getElementById('closeMenuBtn').addEventListener('click', function() {
     menuPopup.style.display = 'none';
   }, 500); // Match the duration of the CSS transition
 });
+
+
+// Additional popups added by Hiro
+document.getElementById('openPopupBtn2').addEventListener('click', function() {
+  const popup = document.getElementById('popup2');
+  popup.style.display = 'flex';
+  setTimeout(() => {
+      popup.classList.add('show');
+  }, 10); // Delay to ensure display is set before adding the show class
+});
+
+document.getElementById('closePopupBtn2').addEventListener('click', function() {
+  const popup = document.getElementById('popup2');
+  popup.classList.remove('show');
+  setTimeout(() => {
+      popup.style.display = 'none';
+  }, 500); // Match the duration of the CSS transition
+});
+
+document.getElementById('openPopupBtn3').addEventListener('click', function() {
+  const popup = document.getElementById('popup3');
+  popup.style.display = 'flex';
+  setTimeout(() => {
+      popup.classList.add('show');
+  }, 10); // Delay to ensure display is set before adding the show class
+});
+
+document.getElementById('closePopupBtn3').addEventListener('click', function() {
+  const popup = document.getElementById('popup3');
+  popup.classList.remove('show');
+  setTimeout(() => {
+      popup.style.display = 'none';
+  }, 500); // Match the duration of the CSS transition
+});
+
+document.getElementById('openPopupBtn4').addEventListener('click', function() {
+  const popup = document.getElementById('popup4');
+  popup.style.display = 'flex';
+  setTimeout(() => {
+      popup.classList.add('show');
+  }, 10); // Delay to ensure display is set before adding the show class
+});
+
+document.getElementById('closePopupBtn4').addEventListener('click', function() {
+  const popup = document.getElementById('popup4');
+  popup.classList.remove('show');
+  setTimeout(() => {
+      popup.style.display = 'none';
+  }, 500); // Match the duration of the CSS transition
+});
