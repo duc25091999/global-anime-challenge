@@ -533,6 +533,7 @@ table tr.highlight td {
     text-align: center;
     transform: rotate(-5deg);
     margin-bottom: 80px;
+    font-weight: 500;
     font-weight: bolder;
 }
 
@@ -620,10 +621,9 @@ table tr.highlight td {
     line-height: 40px;
 }
 
-.goal-list {
+/*.goal-list {
     padding-left: 120px;
-}
-
+}*/
 
 .new-section-header {
     width: 457px;
