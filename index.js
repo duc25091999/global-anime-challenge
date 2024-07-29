@@ -31,3 +31,19 @@ document.getElementById('closePopupBtn').addEventListener('click', function() {
       popup.style.display = 'none';
   }, 500); // Match the duration of the CSS transition
 });
+
+document.getElementById('hamburgur').addEventListener('click', function() {
+  const menuPopup = document.getElementById('menuPopup');
+  menuPopup.style.display = 'flex';
+  setTimeout(() => {
+    menuPopup.classList.add('show');
+  }, 10); // Delay to ensure display is set before adding the show class
+});
+
+document.getElementById('closeMenuBtn').addEventListener('click', function() {
+  const menuPopup = document.getElementById('menuPopup');
+  menuPopup.classList.remove('show');
+  setTimeout(() => {
+    menuPopup.style.display = 'none';
+  }, 500); // Match the duration of the CSS transition
+});

@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Global Anime Challenge</title>
     <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Sawarabi+Gothic&family=Shippori+Antique&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -15,9 +20,9 @@
     <div class="navbar" id="navbar">
         <div class="menu-text" style="opacity: 0;">
             <img src="./assets/hamburgur.png" alt="Global Anime Challenge">
-            <p >menu</p>
+            <p>menu</p>
         </div>
-        <img class="menu-icon" src="./assets/logo.png" >
+        <img class="menu-icon" src="./assets/logo.png">
         <div class="menu-text">
             <img src="./assets/hamburgur.png" alt="Global Anime Challenge">
             <p>menu</p>
@@ -34,7 +39,7 @@
             <div class="floating-logo-mobile">
                 <img src="./assets/section-1.png" alt="Global Anime Challenge">
             </div>
-            <div class="absolute-top-right hamburgur-menu">
+            <div class="absolute-top-right hamburgur-menu" id="hamburgur">
                 <img src="./assets/hamburgur.png" alt="Global Anime Challenge">
                 <p>menu</p>
             </div>
@@ -540,13 +545,53 @@
                         <div style="width: 50%;">
                         </div>
                         <div style="width: 50%;">
-                            <p style="font-size: 20px;">お問い合わせ</p>
+                            <p style="font-size: 20px;">お問い合わせ
+                                <svg style="height: 24px;padding-top: 8px; margin-left: 6px;"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.41 29.42">
+                                    <polyline class="cls-1" points="11.5 6.92 .5 6.92 .5 28.92 22.5 28.92 22.5 17.92" />
+                                    <g>
+                                        <line class="cls-1" x1="11.53" y1="17.92" x2="28.97" y2=".48" />
+                                        <path class="cls-1" d="M29.06,.46c-3.44,3.44-3.44,9.02,0,12.46" />
+                                        <path class="cls-1" d="M28.96,.35c-3.44,3.44-9.02,3.44-12.46,0" />
+                                    </g>
+                                </svg>
+                            </p>
                         </div>
                     </div>
                 </div>
                 <div class="footer-desktop" style="align-items: center;justify-content: space-between;">
                     <p style="font-size: 14px;">©︎ Global Anime Challenge 2024 / All rights reserved</p>
                     <img width="666px" src="./assets/home-description.svg">
+                </div>
+                <div class="footer-mobile">
+                    <div class="d-flex" style="justify-content: space-between;">
+                        <div style="flex-direction: column;
+                        display: flex;
+                        justify-content: end;">
+                            <img width="16px" src="./assets/section-1.png">
+                        </div>
+                        <div>
+                            <p style="font-size: 10px;margin-bottom: 45px; color: #AA1E14;">お問い合わせ
+                                <svg style="height: 14px;padding-top: 6px" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 29.41 29.42">
+                                    <style>
+                                        .cls-1 {
+                                            stroke: #aa1e14 !important;
+                                        }
+                                    </style>
+                                    <polyline class="cls-1" points="11.5 6.92 .5 6.92 .5 28.92 22.5 28.92 22.5 17.92" />
+                                    <g>
+                                        <line class="cls-1" x1="11.53" y1="17.92" x2="28.97" y2=".48" />
+                                        <path class="cls-1" d="M29.06,.46c-3.44,3.44-3.44,9.02,0,12.46" />
+                                        <path class="cls-1" d="M28.96,.35c-3.44,3.44-9.02,3.44-12.46,0" />
+                                    </g>
+                                </svg>
+                            </p>
+                            <img width="119px" src="./assets/footer-label-description.svg">
+                        </div>
+                    </div>
+                    <p style="font-size: 8px; margin-top: 35px;">©︎ Global Anime Challenge 2024 / All rights reserved
+                    </p>
                 </div>
             </div>
         </section>
@@ -584,6 +629,103 @@
                     <div>
                         <p>1979年　（株）日本サンライズ（現（株）サンライズ）入社。TV「機動戦士ガンダム」の制作に参加。1983年劇場版「機動戦士ガンダムⅢ」初プロデュース。以後TV「銀河漂流バイファム」、「シティーハンター」シリーズなどをプロデュース。1993年　サンライズ常務取締役就任。2000年　［ガンダム20周年事業］完遂後サンライズを退社。フリープロデューサーとして「犬夜叉」シリーズに携わる。2003年　SMEグループ（株）アニプレックス制作本部長、執行役員。2005年執行役員常務就任。2010年6月アニプレックス子会社アニメスタジオ（株）A-1Pictures代表取締役社長就任。2014年（株）アニプレックス執行役員社長就任。2016年7月（株）ソニー・ミュージックエンタテインメント常勤顧問就任。<br />
                             2018年4月より現職。2019年春「シド・ミード展」企画・プロデュース。2024年最新作ア</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="menuPopup" class="menuPopup" style="color: white;">
+            <div class="menuPopup-content">
+                <img class="logo-with-text-white" src="./assets/logo-with-text-white.png">
+                <img class="menu-label-white" src="./assets/menu-label-white.png">
+                <img class="menu-label-white-2" src="./assets/menu-label-white-2.svg">
+                <img class="menu-label-white-2-mobile" src="./assets/menu-label-white-2-mobile.svg">
+                <div id="closeMenuBtn" class="close-btn" style="color:white;">
+                    <svg id="Isolation_Mode" data-name="Isolation Mode" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 61.18 45.61">
+                        <defs>
+                            <style>
+                                .cls-1 {
+                                    fill: none;
+                                    stroke: white !important;
+                                    stroke-miterlimit: 10;
+                                    stroke-width: 2px;
+                                }
+                            </style>
+                        </defs>
+                        <line class="cls-1" x1=".59" y1="44.81" x2="60.59" y2=".81" />
+                        <line class="cls-1" x1="60.59" y1="44.81" x2=".59" y2=".81" />
+                    </svg>
+                    close
+                </div>
+                <div class="menu-list-container">
+                    <div class="menu-list">
+                        <div class="menu-item">
+                            <div class="menu-item-title">
+                                <p>お知らせ</p>
+                                <p>News</p>
+                            </div>
+                            <div class="menu-item-img">
+                                <img src="./assets/menu-go-next.svg">
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-title">
+                                <p>プログラム指導者</p>
+                                <p>Program Advisors</p>
+                            </div>
+                            <div class="menu-item-img">
+                                <img src="./assets/menu-go-next.svg">
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-title">
+                                <p>プロジェクト趣旨</p>
+                                <p>Project Goals</p>
+                            </div>
+                            <div class="menu-item-img">
+                                <img src="./assets/menu-go-next.svg">
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-title">
+                                <p>よくある質問</p>
+                                <p>FAQ</p>
+                            </div>
+                            <div class="menu-item-img">
+                                <img src="./assets/menu-go-next.svg">
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-title">
+                                <p>応募条件</p>
+                                <p>Application Requirements</p>
+                            </div>
+                            <div class="menu-item-img">
+                                <img src="./assets/menu-go-next.svg">
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-title">
+                                <p>事業団体とメンバー</p>
+                                <p>Organizations & Members</p>
+                            </div>
+                            <div class="menu-item-img">
+                                <img src="./assets/menu-go-next.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-link">
+                        <p>お問い合わせ
+                        </p>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.41 29.42">
+                            <polyline class="cls-1" points="11.5 6.92 .5 6.92 .5 28.92 22.5 28.92 22.5 17.92" />
+                            <g>
+                                <line class="cls-1" x1="11.53" y1="17.92" x2="28.97" y2=".48" />
+                                <path class="cls-1" d="M29.06,.46c-3.44,3.44-3.44,9.02,0,12.46" />
+                                <path class="cls-1" d="M28.96,.35c-3.44,3.44-9.02,3.44-12.46,0" />
+                            </g>
+                        </svg>
                     </div>
                 </div>
             </div>
