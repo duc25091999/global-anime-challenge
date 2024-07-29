@@ -1440,9 +1440,10 @@ table tr.highlight td {
     }
 
     .navbar {
-        padding: 10px 25px;
-        transform: translateY(-100%);
         border-bottom: 1px solid #AA1E14;
+    }
+    .navbar-container {
+        padding:  10px 25px;
     }
 
     .navbar a {
@@ -1452,17 +1453,17 @@ table tr.highlight td {
     }
 
     .menu-icon {
-        height: 38px;
-        width: 38px;
+        height: 40px;
+        width: 40px;
     }
 
     .menu-text {
-        font-size: 10px;
+        font-size: 14px;
     }
 
     .menu-text img {
-        width: 25px;
-        height: 20px;
+        width: 35px;
+        height: 26px;
     }
 
     .logo-with-text-white {
