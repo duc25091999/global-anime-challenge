@@ -13,14 +13,14 @@
         <img src="./assets/logo-with-text.png" alt="Global Anime Challenge">
     </div>
     <div class="navbar" id="navbar">
-        <div style="opacity: 0;">
+        <div class="menu-text" style="opacity: 0;">
             <img src="./assets/hamburgur.png" alt="Global Anime Challenge">
-            <p style="font-size: 24px;">menu</p>
+            <p >menu</p>
         </div>
-        <img src="./assets/logo.png" width="80px" height="80px">
-        <div>
+        <img class="menu-icon" src="./assets/logo.png" >
+        <div class="menu-text">
             <img src="./assets/hamburgur.png" alt="Global Anime Challenge">
-            <p style="font-size: 24px;">menu</p>
+            <p>menu</p>
         </div>
     </div>
     <div class="content">
@@ -328,13 +328,13 @@
                     </a>
                 </div>
             </div>
-            <hr style="border: none; height: 2px; background-color: #AA1E14; margin-top: 120px;">
+            <hr class="faq-section-border">
         </section>
 
-        <section id="video-section" style="padding: 120px 200px 0px 320px;">
-            <div class="d-flex" style="justify-content: space-between; align-items: center; margin-bottom: 60px;">
-                <p class="color-primary" style="font-size: 20px;">2024年7月31日（水）グローバル・アニメ・チャレンジ事業内容説明会の様子</p>
-                <p class="color-primary" style="font-size: 14px;">＠株式会社日本総合研究所　社会価値共創スタジオ</p>
+        <section id="video-section">
+            <div class="video-section-header">
+                <p class="color-primary">2024年7月31日（水）グローバル・アニメ・チャレンジ事業内容説明会の様子</p>
+                <p class="color-primary">＠株式会社日本総合研究所　社会価値共創スタジオ</p>
             </div>
             <div class="video-container">
                 <iframe class="video" src="https://www.youtube.com/embed/V9eAhe6IBPY?si=jSNGvM1SfVxJZ42F"
@@ -344,75 +344,72 @@
             </div>
         </section>
 
-        <section id="organization-member-section" style="padding: 120px 200px 0px 320px;">
-            <div style="width: 100%; background-color: #F2F2F2; padding: 120px 60px 0px">
-                <h1 class="color-primary" style="text-align: center; margin-bottom: 20px;">事業団体とメンバー</h1>
-                <h2 class="color-primary" style="text-align: center;">Organizations & Members</h2>
-                <hr style="border: none; height: 1px; background-color: #B4B4B4; margin-top: 120px;">
-                <div class="d-flex"
-                    style="gap: 40px; justify-content: space-between; padding-top: 40px; padding-bottom: 40px;">
-                    <div style="width: 50%;">
-                        <div class="d-flex" style="align-items: center; justify-content: space-between;">
-                            <div class="d-flex" style="gap: 20px; align-items: center;">
-                                <p class="color-primary" style="font-size: 20px;">事業主体</p>
-                                <p class="color-primary" style="font-size: 18px;">Operating Entity</p>
+        <section id="organization-member-section">
+            <div class="organization-member-container">
+                <h1 class="color-primary">事業団体とメンバー</h1>
+                <h2 class="color-primary">Organizations & Members</h2>
+                <hr class="organization-member-header-border">
+                <div class="organization-member-list">
+                    <div class="organization-member-item">
+                        <div class="d-flex organization-member-item-title">
+                            <div class="d-flex organization-member-item-title-primary">
+                                <p class="color-primary">事業主体</p>
+                                <p class="color-primary">Operating Entity</p>
                             </div>
-                            <p style="font-size: 20px;">株式会社キネマシトラス</p>
+                            <p class="organization-member-item-title-secondary">株式会社キネマシトラス</p>
                         </div>
-                        <div class="d-flex" style="justify-content: center; margin-top: 40px; margin-bottom: 40px;">
+                        <div class="d-flex organization-member-item-image"
+                            style="justify-content: center; margin-top: 40px; margin-bottom: 40px;">
                             <img src="./assets/kinema-citrus-logo.png">
                         </div>
-                        <p style="font-size: 20px;">
+                        <p class="organization-member-item-description">
                             キネマシトラスは、「100年残る、時代が変わっても変わらない価値観が入っているフィルムを産み出す」を理念に、2008年に設立したアニメーション企画・制作を行う会社です。</p>
                     </div>
                     <div style="width: 1px; background-color: #B4B4B4;">
 
                     </div>
-                    <div style="width: 50%;">
-                        <div class="d-flex" style="align-items: center; justify-content: space-between;">
-                            <div class="d-flex" style="gap: 20px; align-items: center;">
-                                <p class="color-primary" style="font-size: 20px;">パートナー</p>
-                                <p class="color-primary" style="font-size: 18px;">Partner</p>
+                    <div class="organization-member-item">
+                        <div class="d-flex organization-member-item-title">
+                            <div class="d-flex organization-member-item-title-primary">
+                                <p class="color-primary">パートナー</p>
+                                <p class="color-primary">Partner</p>
                             </div>
-                            <p style="font-size: 20px;">株式会社日本総合研究所</p>
+                            <p class="organization-member-item-title-secondary">株式会社日本総合研究所</p>
                         </div>
-                        <div class="d-flex"
-                            style="justify-content: center;  margin-top: 40px; margin-bottom: 40px; min-height: 131px; align-items: center;">
+                        <div class="d-flex organization-member-item-image">
                             <div style="height: fit-content;">
                                 <img src="./assets/the-japan-research-institute-limited.png">
                             </div>
                         </div>
-                        <p style="font-size: 20px;">日本総研は、より高く大きな観点から将来を見通しビジョンを提示、変革が実現するまでの支援を行うシンクタンクです。</p>
+                        <p class="organization-member-item-description">
+                            日本総研は、より高く大きな観点から将来を見通しビジョンを提示、変革が実現するまでの支援を行うシンクタンクです。</p>
                     </div>
                 </div>
                 <hr style="border: none; height: 1px; background-color: #B4B4B4;">
-                <div class="d-flex"
-                    style="gap: 40px; justify-content: space-between; padding-top: 40px; padding-bottom: 40px;">
-                    <div style="width: 50%;">
-                        <div class="d-flex" style="align-items: center; justify-content: space-between;">
-                            <div class="d-flex" style="gap: 20px; align-items: center;">
-                                <p class="color-primary" style="font-size: 20px;">運営協力</p>
-                                <p class="color-primary" style="font-size: 18px;">Project Management Support</p>
+                <div class="organization-member-list">
+                    <div class="organization-member-item">
+                        <div class="d-flex organization-member-item-title">
+                            <div class="d-flex organization-member-item-title-primary">
+                                <p class="color-primary">運営協力</p>
+                                <p class="color-primary">Project Management Support</p>
                             </div>
-                            <p style="font-size: 20px;">株式会社foriio</p>
+                            <p class="organization-member-item-title-secondary">株式会社foriio</p>
                         </div>
-                        <div class="d-flex"
-                            style="justify-content: center; margin-top: 40px; margin-bottom: 40px; min-height: 131px; align-items: center">
+                        <div class="d-flex organization-member-item-image">
                             <div><img src="./assets/forrio.png"></div>
                         </div>
                     </div>
                     <div style="width: 1px; background-color: #B4B4B4;">
                     </div>
-                    <div style="width: 50%;">
-                        <div class="d-flex" style="align-items: center; justify-content: space-between;">
-                            <div class="d-flex" style="gap: 20px; align-items: center;">
-                                <p class="color-primary" style="font-size: 20px;">PR担当</p>
-                                <p class="color-primary" style="font-size: 18px;">Public Relations</p>
+                    <div class="organization-member-item">
+                        <div class="d-flex organization-member-item-title">
+                            <div class="d-flex organization-member-item-title-primary">
+                                <p class="color-primary">PR担当</p>
+                                <p class="color-primary">Public Relations</p>
                             </div>
-                            <p style="font-size: 20px;">株式会社サーティスリー</p>
+                            <p class="organization-member-item-title-secondary">株式会社サーティスリー</p>
                         </div>
-                        <div class="d-flex"
-                            style="justify-content: center; margin-top: 40px; margin-bottom: 40px;align-items: center">
+                        <div class="d-flex organization-member-item-image">
                             <div>
                                 <img src="./assets/thirtythree.png">
                             </div>
@@ -420,42 +417,41 @@
                     </div>
                 </div>
                 <hr style="border: none; height: 1px; background-color: #B4B4B4;">
-                <div style="background-color: white;padding: 120px 160px; justify-content:space-between; gap: 120px; margin-top: 60px; margin-bottom: 60px;"
-                    class="d-flex">
+                <div class="supporter-container">
                     <div class="d-flex" style="flex-direction: column; justify-content: space-between;">
-                        <div>
-                            <p class="color-primary" style="font-size: 20px;">PRサポーター／アンバサダー</p>
-                            <p style="font-size: 18px;">PR Supporter/ Ambassador</p>
+                        <div class="supporter-title-primary">
+                            <p class="color-primary">PRサポーター／アンバサダー</p>
+                            <p>PR Supporter/ Ambassador</p>
                         </div>
-                        <div class="d-flex" style="justify-content: space-between; align-items: center;">
-                            <p style="font-size: 20px;">伊瀬茉莉也／イセマリヤ</p>
-                            <p style="font-size: 18px;">ISE Mariya</p>
+                        <div class="d-flex supporter-title-secondary">
+                            <p>伊瀬茉莉也／イセマリヤ</p>
+                            <p>ISE Mariya</p>
                         </div>
                         <div>
+                            <img class="supporter-img-mobile" src="./assets/supporter.png">
                             <hr style="border: none; height: 1px; background-color: #AA1E14;">
-                            <p style="font-size: 14px; margin-top: 20px;">声優。アクロスエンタテインメント所属。
+                            <p class="supporter-description">声優。アクロスエンタテインメント所属。
                                 主な出演作は『HUNTER×HUNTER』キルア=ゾルディック役、『ジョジョの奇妙な冒険
                                 ストーンオーシャン』フー・ファイターズ役、『ポケットモンスターXY』ユリーカ役、『メイドインアビス』レグ役、『シン・エヴァンゲリオン劇場版:II』北上ミドリ役、Netflixオリジナル作品『クイーンズ・ギャンビット』ベス役（アニャ・テイラー=ジョイ）吹替、『A
                                 Family Affair』ザラ役（ジョーイ・キング）吹替など。</p>
                         </div>
                     </div>
                     <div>
-                        <img src="./assets/supporter.png">
+                        <img class="supporter-img-desktop" src="./assets/supporter.png">
                     </div>
                 </div>
                 <hr style="border: none; height: 1px; background-color: #B4B4B4;">
-                <div
-                    style="display: flex; gap:120px; justify-content: space-between; padding-top: 60px; padding-bottom: 60px;">
-                    <div class="color-primary" style="width: 30%;">
-                        <p style="font-size: 20px;">PR支援</p>
-                        <p style="font-size: 18px;">Public Relations Support</p>
+                <div class="public-relation-support-container">
+                    <div class="color-primary public-relation-support-primary-title">
+                        <p>PR支援</p>
+                        <p>Public Relations Support</p>
                     </div>
-                    <div style="width: 30%;">
-                        <p style="font-size: 20px;">鳩岡桃子／ハトオカモモコ</p>
-                        <p style="font-size: 18px;">HATOOKA Momoko</p>
+                    <div class="public-relation-support-secondary-title">
+                        <p>鳩岡桃子／ハトオカモモコ</p>
+                        <p>HATOOKA Momoko</p>
                     </div>
-                    <div style="width: 40%;">
-                        <p style="font-size: 14px;">
+                    <div class="public-relation-support-description">
+                        <p>
                             ダミニュータイプ編集部に18年在籍。近年ではKADOKAWA社内の"Newtype海外展開プロジェクト"のコアメンバーを務め、アニメエキスポで来場者向けのカスタムマガジンを発行・配布している。アイマート講演『アニメカルチャーをいかに海外に伝えるか－国内メディアの挑戦－』。書籍に『犬王アニメーションガイド』『平家物語アニメーションガイド』『キルラキル神衣万象』『リトルウィッチアカデミアクロニクル』『上坂すみれ写真集UESAKA
                             JAPAN』『中島かずきと役者人」など。</p>
                     </div>
@@ -464,42 +460,38 @@
                 <hr style="border: none; height: 1px; background-color: #B4B4B4;">
                 <hr style="border: none; height: 1px; background-color: #B4B4B4; margin-top: 10px;">
 
-                <div
-                    style="display: flex; gap:120px; justify-content: space-between; padding-top: 60px; padding-bottom: 80px;">
-                    <div class="d-flex"
-                        style="width: 30%; gap:40px ; flex-direction: column; justify-content: space-between;">
-                        <div>
-                            <p style="font-size: 14px;">プロジェクトリーダー</p>
-                            <p style="font-size: 20px;">小笠原宗紀</p>
+                <div class="public-relation-support-container">
+                    <div class="d-flex public-relation-support-item">
+                        <div class="public-relation-support-item-title">
+                            <p>プロジェクトリーダー</p>
+                            <p>小笠原宗紀</p>
                         </div>
-                        <p style="font-size: 14px;">
+                        <p class="public-relation-support-item-description">
                             キネマシトラス代表取締役会長､ぎふとアニメーション代表取締役､合同会社breccia 代表社員｡1995年から制作進行（主にアメリカのアニメ）
                             の職につき､プロダクション・アイジー､ボンズ､カラーを経て､キネマシトラスを起業し､以降､多くのアニメーションプロデューサーを担当｡
                         </p>
                     </div>
-                    <div style="width: 1px; background-color: #B4B4B4;">
+                    <div class="public-relation-support-item-divider">
                     </div>
-                    <div class="d-flex"
-                        style="width: 30%; gap:40px; flex-direction: column; justify-content: space-between;">
-                        <div>
-                            <p style="font-size: 14px;">プロジェクトサブリーダー/ 英語トレーナー</p>
-                            <p style="font-size: 20px;">長谷川博美</p>
+                    <div class="d-flex public-relation-support-item">
+                        <div class="public-relation-support-item-title">
+                            <p>プロジェクトサブリーダー/ 英語トレーナー</p>
+                            <p>長谷川博美</p>
                         </div>
-                        <p style="font-size: 14px;">
+                        <p class="public-relation-support-item-description">
                             キネマシトラス海外企画プロデューサー｡コーディネーター兼通訳として欧米の見本市やコンベンションに数多く参加｡北米VIZメディアに６年間勤務｡Netflix
                             オリジナルアニメ『エデン』での共同プロデューサー経験を経て､現職｡キネマシトラスではKickstarter
                             や海外アニメーターの育成とスタジオ受入支援､他英語監修・海外コーディネート全般を担当｡フリーで会議やアテ
                         </p>
                     </div>
-                    <div style="width: 1px; background-color: #B4B4B4;">
+                    <div class="public-relation-support-item-divider">
                     </div>
-                    <div class="d-flex"
-                        style="width: 30%; gap:40px; flex-direction: column; justify-content: space-between;">
-                        <div>
-                            <p style="font-size: 14px;">リサーチャー/ ファシリテーター</p>
-                            <p style="font-size: 20px;">安井洋輔</p>
+                    <div class="d-flex public-relation-support-item">
+                        <div class="public-relation-support-item-title">
+                            <p>リサーチャー/ ファシリテーター</p>
+                            <p>安井洋輔</p>
                         </div>
-                        <p style="font-size: 14px;">
+                        <p class="public-relation-support-item-description">
                             株式会社日本総合研究所 調査部
                             主任研究員（シニア・エコノミスト）｡注力テーマは日本経済における中長期的な構造変化で､現在､リーディング産業になる可能性を秘めたアニメ産業の成長戦略について研究中｡コロンビア大学国際公共政策大学院（SIPA）
                             卒業（MPA）｡千葉大学大学院人文公共学府博士後期課程修了､博士（経済学）｡
@@ -507,42 +499,41 @@
                     </div>
                 </div>
             </div>
-            <hr style="border: none; height: 2px; background-color: #AA1E14; margin-top: 120px;">
+            <hr class="organization-member-section-border">
         </section>
 
-        <section style="padding: 120px 200px 80px 320px;">
-            <div class="d-flex" style="flex-direction: column; gap: 120px;">
-                <div class="d-flex" style="justify-content: space-between;">
-                    <img src="./assets/logo-with-text.png">
-                    <div class="color-primary d-flex"
-                        style="width: 50%; flex-wrap: wrap; align-items: center; padding-left: 40px; padding-right: 40px;">
-                        <div style="width: 50%;">
-                            <p style="font-size: 20px;">お知らせ</p>
-                            <p style="font-size: 14px;">News</p>
+        <section id="footer">
+            <div class="d-flex footer-wrapper">
+                <div class="footer-container">
+                    <img class="footer-img" src="./assets/logo-with-text.png">
+                    <div class="color-primary footer-list-item">
+                        <div class="footer-item">
+                            <p>お知らせ</p>
+                            <p>News</p>
                         </div>
-                        <div style="width: 50%;">
-                            <p style="font-size: 20px;">プログラム指導者</p>
-                            <p style="font-size: 14px;">Program Advisors</p>
+                        <div class="footer-item">
+                            <p>プログラム指導者</p>
+                            <p>Program Advisors</p>
                         </div>
-                        <div style="width: 50%;">
-                            <p style="font-size: 20px;">プロジェクト趣旨</p>
-                            <p style="font-size: 14px;">Project Goals</p>
+                        <div class="footer-item">
+                            <p>プロジェクト趣旨</p>
+                            <p>Project Goals</p>
                         </div>
-                        <div style="width: 50%;">
-                            <p style="font-size: 20px;">よくある質問</p>
-                            <p style="font-size: 14px;">FAQ</p>
+                        <div class="footer-item">
+                            <p>よくある質問</p>
+                            <p>FAQ</p>
                         </div>
-                        <div style="width: 50%;">
-                            <p style="font-size: 20px;">応募条件</p>
-                            <p style="font-size: 14px;">Application Requirements</p>
+                        <div class="footer-item">
+                            <p>応募条件</p>
+                            <p>Application Requirements</p>
                         </div>
-                        <div style="width: 50%;">
-                            <p style="font-size: 20px;">事業団体とメンバー</p>
-                            <p style="font-size: 14px;">Organizations & Members</p>
+                        <div class="footer-item">
+                            <p>事業団体とメンバー</p>
+                            <p>Organizations & Members</p>
                         </div>
                     </div>
                 </div>
-                <div class="d-flex" style="justify-content: space-between;">
+                <div class="d-flex footer-desktop" style="justify-content: space-between;">
                     <img src="./assets/logo-hozontal.png">
                     <div class="d-flex"
                         style="width: 50%; flex-wrap: wrap; align-items: center; padding-left: 40px; padding-right: 40px;">
@@ -553,9 +544,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="d-flex" style="align-items: center;justify-content: space-between;">
+                <div class="footer-desktop" style="align-items: center;justify-content: space-between;">
                     <p style="font-size: 14px;">©︎ Global Anime Challenge 2024 / All rights reserved</p>
-                    <p style="font-size: 14px;">文化芸術活動基盤強化基金（クリエイター等育成・文化施設高付加価値化支援事業） | 独立行政法人日本芸術文化振興会</p>
+                    <img width="666px" src="./assets/home-description.svg">
                 </div>
             </div>
         </section>
