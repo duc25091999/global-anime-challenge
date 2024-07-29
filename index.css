@@ -374,6 +374,8 @@ table tr.highlight td {
 }
 
 .popup {
+    overflow: scroll;
+    overscroll-behavior: contain;
     display: none;
     /* Hidden by default */
     position: fixed;
@@ -836,7 +838,7 @@ table tr.highlight td {
     background-color: white;
     padding: 120px 160px;
     justify-content: space-between;
-/*    gap: 120px;*/
+    /*    gap: 120px;*/
     margin-top: 50px;
     margin-bottom: 50px;
 }
@@ -846,7 +848,7 @@ table tr.highlight td {
     background-color: white;
     padding: 120px 160px;
     justify-content: space-between;
-/*    gap: 120px;*/
+    /*    gap: 120px;*/
     margin-top: 50px;
     margin-bottom: 50px;
 }
@@ -856,7 +858,7 @@ table tr.highlight td {
     align-items: center;
 }
 
-.supporter-title-primary p:nth-child(1){
+.supporter-title-primary p:nth-child(1) {
     font-size: 36px;
     margin-bottom: 30px;
     font-family: "Shippori Antique", sans-serif;
@@ -897,7 +899,7 @@ table tr.highlight td {
 
 .public-relation-support-bottom-container {
     display: flex;
-/*    gap: 120px;*/
+    /*    gap: 120px;*/
     justify-content: space-between;
     padding-top: 60px;
     padding-bottom: 60px;
@@ -993,6 +995,28 @@ img.footer-img {
 
 .footer-mobile {
     display: none;
+}
+
+.go-to-top {
+    position: fixed;
+    width: 70px;
+    bottom: 490px;
+    right: calc((100vw - 1920px + 160px)/2);
+    visibility: hidden;
+    /* Start hidden */
+    opacity: 0;
+    /* Start with 0 opacity */
+    cursor: pointer;
+    z-index: 1000;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    /* Add transition for opacity and visibility */
+}
+
+.go-to-top.show {
+    visibility: visible;
+    /* Show the button */
+    opacity: 1;
+    /* Change opacity to 1 */
 }
 
 /* @keyframes scrollVertical {
@@ -1502,8 +1526,9 @@ img.footer-img {
     .navbar {
         border-bottom: 1px solid #AA1E14;
     }
+
     .navbar-container {
-        padding:  10px 25px;
+        padding: 10px 25px;
     }
 
     .navbar a {
@@ -1596,6 +1621,41 @@ img.footer-img {
         bottom: 12.5px;
         right: 25px;
     }
+
+    .popup-content {
+        padding: 140px 25px 70px 25px;
+        width: 100%;
+        gap: 0px;
+    }
+
+    .popup.show {
+        display: block !important;
+    }
+
+    .popup-content {
+        flex-direction: column-reverse;
+        font-size: 10px;
+    }
+
+    .popup-title-primary {
+        margin-bottom: 35px;
+    }
+
+    .popup-title-secondary {
+        display: flex;
+        margin-bottom: 70px;
+    }
+
+    .popup-description {
+        margin-bottom: 70px;
+    }
+
+    .go-to-top {
+        width: 25px;
+        bottom: 540px;
+        right: 0;
+    }
+
 
 }
 

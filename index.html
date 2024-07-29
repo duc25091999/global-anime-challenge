@@ -31,6 +31,7 @@
         <img src="./assets/logo-with-text.png" alt="Global Anime Challenge">
     </div>
     <div class="content">
+        <img id="goToTopBtn" class="go-to-top" src="./assets/scroll-to-top-btn.svg" onclick="scrollToTop()">
         <section id="homepage-section">
             <div class="absolute-top-left d-flex h-100 flex-direction-column">
                 <img class="content-title" src="./assets/title.png" alt="Global Anime Challenge">
@@ -267,7 +268,8 @@
                             <br />
                             <p class="sawarabi-gothic">株式会社スカイフォール代表取締役／
                                 プロデューサー</p>
-                            <p class="sawarabi-gothic" id="openPopupBtn" style="text-decoration: underline;">プロフィールを見る
+                            <p class="sawarabi-gothic" id="openPopupBtn"
+                                style="text-decoration: underline; cursor: pointer;">プロフィールを見る
                             </p>
                         </div>
                         <img src="./assets/advisor-1.png" width="360px">
@@ -308,7 +310,7 @@
                             <p class="sawarabi-gothic">ジャーナリスト／
                                 新潟国際アニメーション映画祭
                                 プログラムディレクター</p>
-                            <p class="sawarabi-gothic" id="openPopupBtn4" style="text-decoration: underline;">プロフィールを見る
+                            <p class="sawarabi-gothic" id="openPopupBtn4" tyle="text-decoration: underline; cursor: pointer;">プロフィールを見る
                             </p>
                         </div>
                         <img src="./assets/advisor-4.png" width="360px">
@@ -635,7 +637,7 @@
         </section>
 
         <div id="popup" class="popup">
-            <div class="popup-content" style="display: flex; gap: 120px;">
+            <div class="popup-content">
                 <div id="closePopupBtn" class="close-btn">
                     <svg id="Isolation_Mode" data-name="Isolation Mode" xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 61.18 45.61">
@@ -656,15 +658,16 @@
                 </div>
                 <img src="./assets/advisor-1.png" height="400px">
                 <div class="d-flex" style="flex-direction: column;justify-content: space-between;">
-                    <div class="d-flex" style="justify-content: space-between;">
-                        <p>植田益朗／ウエダマスオ</p>
-                        <p>UEDA Masuo</p>
+                    <div class="d-flex popup-title-primary" style="justify-content: space-between;">
+                        <p class="sawarabi-gothic">植田益朗／ウエダマスオ</p>
+                        <p class="hanken-grotesk">UEDA Masuo</p>
                     </div>
-                    <div>
-                        <p>株式会社スカイフォール代表取締役／</p>
-                        <p>プロデューサー</p>
+                    <div class="popup-title-secondary">
+                        <p class="sawarabi-gothic">株式会社スカイフォール代表取締役／</p>
+                        <p class="sawarabi-gothic">プロデューサー</p>
                     </div>
-                    <div>
+                    <div class="popup-description">
+                        <p class="sawarabi-gothic">
                         <p>1979年　（株）日本サンライズ（現（株）サンライズ）入社。TV「機動戦士ガンダム」の制作に参加。1983年劇場版「機動戦士ガンダムⅢ」初プロデュース。以後TV「銀河漂流バイファム」、「シティーハンター」シリーズなどをプロデュース。1993年　サンライズ常務取締役就任。2000年　［ガンダム20周年事業］完遂後サンライズを退社。フリープロデューサーとして「犬夜叉」シリーズに携わる。2003年　SMEグループ（株）アニプレックス制作本部長、執行役員。2005年執行役員常務就任。2010年6月アニプレックス子会社アニメスタジオ（株）A-1Pictures代表取締役社長就任。2014年（株）アニプレックス執行役員社長就任。2016年7月（株）ソニー・ミュージックエンタテインメント常勤顧問就任。2018年4月より現職。2019年春「シド・ミード展」企画・プロデュース。2024年最新作アニメプロジェクト「未ル　わたしのみらい」プロデュース。
                         </p>
                     </div>
@@ -672,7 +675,7 @@
             </div>
         </div>
         <div id="popup2" class="popup">
-            <div class="popup-content" style="display: flex; gap: 120px;">
+            <div class="popup-content">
                 <div id="closePopupBtn2" class="close-btn">
                     <svg id="Isolation_Mode" data-name="Isolation Mode" xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 61.18 45.61">
@@ -693,23 +696,23 @@
                 </div>
                 <img src="./assets/advisor-2.png" height="400px">
                 <div class="d-flex" style="flex-direction: column;justify-content: space-between;">
-                    <div class="d-flex" style="justify-content: space-between;">
-                        <p>菊池剛／キクチタケシ</p>
-                        <p>KIKUCHI Takeshi</p>
+                    <div class="d-flex popup-title-primary" style="justify-content: space-between;">
+                        <p class="sawarabi-gothic">菊池剛／キクチタケシ</p>
+                        <p class="hanken-grotesk">KIKUCHI Takeshi</p>
                     </div>
-                    <div>
-                        <p>株式会社スカイフォール代表取締役／</p>
-                        <p>プロデューサー</p>
+                    <div class="popup-title-secondary">
+                        <p class="sawarabi-gothic">株式会社スカイフォール代表取締役／</p>
+                        <p class="sawarabi-gothic">プロデューサー</p>
                     </div>
-                    <div>
-                        <p>
+                    <div class="popup-description">
+                        <p class="sawarabi-gothic">
                             1968年8月生まれ。
                             1992年明治大学卒業後、（株）東北新社入社後、TVCM制作を担当。
                             2004年（株）角川書店入社、アニメ事業に従事。
                             2021年（株）KADOKAWAメディアミックス事業グループ執行役員Chief Anime Officer(CAO)兼Chief　Licencing Officer(CLO)として数多くのアニメ、ゲーム、イベントなど総合的なメディアミックス事業を担当するとともに、（株）StudioKADAN代表取締役社長を務める。
                             2023年（株）KADOKAWA　執行役 Chief Anime Officer(CAO) に就任。
                             2024年KADOKAWAアニメ・声優アカデミー powerd by VANTAN　教育顧問に就任。現在に至る
-                        </p>
+                      </p>
                     </div>
                 </div>
             </div>
