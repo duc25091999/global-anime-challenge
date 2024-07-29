@@ -518,6 +518,14 @@ table tr.highlight td {
     align-items: center;
 }
 
+.menu-link p {
+    transition: color 0.3s ease;
+}
+
+.menu-link:hover p {
+    color: #000;
+}
+
 .menu-link svg {
     width: 25px;
     margin-left: 8px;
@@ -1038,6 +1046,13 @@ img.footer-img {
     /* Show the button */
     opacity: 1;
     /* Change opacity to 1 */
+}
+
+.black-hover-link p{
+    transition: color 0.3s ease;
+}
+.black-hover-link:hover p {
+    color: #000 !important;
 }
 
 /* @keyframes scrollVertical {
