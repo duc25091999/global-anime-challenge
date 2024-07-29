@@ -100,9 +100,13 @@ function closeMenuAndScrollTo(id) {
   const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
 
   window.scrollTo({ top: y, behavior: 'smooth' });
-  // document.getElementById(id).scrollIntoView({
-  //   behavior: 'smooth'
-  // });
+}
+
+function scrollToId(id) {
+  const yOffset = -120;
+  const element = document.getElementById(id);
+  const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+  window.scrollTo({ top: y, behavior: 'smooth' });
 }
 
 // Additional popups added by Hiro

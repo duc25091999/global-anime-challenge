@@ -177,7 +177,7 @@ h2 {
 }
 
 .spinning {
-    animation: spin 12s linear infinite;
+    animation: spin 30s linear infinite;
 }
 
 .py-3 {
@@ -474,6 +474,14 @@ table tr.highlight td {
     align-items: center;
     position: relative;
     cursor: pointer;
+}
+
+.menu-item p {
+    transition: color 0.3s ease;
+}
+
+.menu-item:hover p {
+    color: #000;
 }
 
 .menu-item::after {
@@ -975,6 +983,15 @@ img.footer-img {
 
 .footer-item {
     width: 50%;
+    cursor: pointer;
+}
+
+.footer-item p {
+    transition: color 0.3s ease
+}
+
+.footer-item:hover p {
+    color: black;
 }
 
 .footer-item p:nth-child(1) {
