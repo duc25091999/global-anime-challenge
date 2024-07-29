@@ -706,7 +706,10 @@ table tr.highlight td {
     margin-bottom: 70px;
 }
 
-.advisor-item p#openPopupBtn {
+.advisor-item p#openPopupBtn,
+.advisor-item p#openPopupBtn2,
+.advisor-item p#openPopupBtn3,
+.advisor-item p#openPopupBtn4 {
     margin-top: 65px;
     color: #727171;
 }
@@ -847,16 +850,16 @@ table tr.highlight td {
 .supporter-container {
     display: flex;
     background-color: white;
-    padding: 120px 160px;
+    padding: 100px 117px;
     justify-content: space-between;
-    /*    gap: 120px;*/
+    gap: 120px;
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
 .supporter-title-secondary {
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
 }
 
 .supporter-title-primary p:nth-child(1) {
