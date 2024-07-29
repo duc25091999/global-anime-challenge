@@ -124,7 +124,7 @@ h2 {
 }
 
 .content {
-    margin: 100px 100px 0px;
+    margin: 80px 80px 0px;
 }
 
 .content section {
@@ -523,7 +523,7 @@ table tr.highlight td {
 }
 
 #step-out-section {
-    padding: 200px 200px 0px 320px;
+    padding: 120px 160px 0px 280px;
 }
 
 .step-out-title {
@@ -566,7 +566,7 @@ table tr.highlight td {
 #faq-section,
 #video-section,
 #organization-member-section {
-    padding: 120px 200px 0px 320px;
+    padding: 120px 160px 0px 280px;
 }
 
 .new-section-container,
@@ -615,16 +615,21 @@ table tr.highlight td {
 .requirement-list {
     max-width: 850px;
     font-size: 20px;
+    line-height: 40px;
 }
 
 .goal-list {
     padding-left: 120px;
 }
 
+
+.new-section-header {
+    width: 457px;
+}
+
 .news-content {
     gap: 24px
 }
-
 
 .news-border {
     border: none;
@@ -661,6 +666,10 @@ table tr.highlight td {
     margin-top: 120px;
 }
 
+.requirement-section-header {
+    width: 457px;
+}
+
 .requirement-item {
     margin-bottom: 80px;
 }
@@ -670,6 +679,10 @@ table tr.highlight td {
     height: 2px;
     background-color: #AA1E14;
     margin-top: 120px;
+}
+
+.advisor-section-header {
+    width: 457px;
 }
 
 .advisor-list {
@@ -682,6 +695,17 @@ table tr.highlight td {
     display: flex;
     gap: 24px;
     justify-content: space-between;
+}
+
+.advisor-item p.hanken-grotesk {
+    font-size: 18px;
+    margin-top: 27px;
+    margin-bottom: 70px;
+}
+
+.advisor-item p#openPopupBtn {
+    margin-top: 65px;
+    color: #727171;
 }
 
 .advisor-list hr {
@@ -697,6 +721,10 @@ table tr.highlight td {
     height: 2px;
     background-color: #AA1E14;
     margin-top: 120px;
+}
+
+.faq-section-header {
+    width: 457px;
 }
 
 .faq-list {
@@ -716,7 +744,7 @@ table tr.highlight td {
 }
 
 .faq-item.odd {
-    margin-bottom: 80px;
+    margin-bottom: 65px;
 }
 
 .faq-item :nth-child(1) {
@@ -741,7 +769,7 @@ table tr.highlight td {
 .organization-member-container {
     width: 100%;
     background-color: #F2F2F2;
-    padding: 120px 60px 0px
+    padding: 100px 60px 0px
 }
 
 .organization-member-container h1 {
@@ -757,7 +785,7 @@ table tr.highlight td {
     border: none;
     height: 1px;
     background-color: #B4B4B4;
-    margin-top: 120px;
+    margin-top: 100px;
 }
 
 .organization-member-list {
@@ -803,14 +831,24 @@ table tr.highlight td {
     align-items: center;
 }
 
+.ambassadar-container {
+    display: flex;
+    background-color: white;
+    padding: 120px 160px;
+    justify-content: space-between;
+/*    gap: 120px;*/
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 .supporter-container {
     display: flex;
     background-color: white;
     padding: 120px 160px;
     justify-content: space-between;
-    gap: 120px;
-    margin-top: 60px;
-    margin-bottom: 60px;
+/*    gap: 120px;*/
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .supporter-title-secondary {
@@ -818,19 +856,27 @@ table tr.highlight td {
     align-items: center;
 }
 
-.supporter-title-primary p:nth-child(1),
+.supporter-title-primary p:nth-child(1){
+    font-size: 36px;
+    margin-bottom: 30px;
+    font-family: "Shippori Antique", sans-serif;
+    line-height: 49px;
+}
+
 .supporter-title-secondary p:nth-child(1) {
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .supporter-title-primary p:nth-child(2),
 .supporter-title-secondary p:nth-child(2) {
-    font-size: 18px;
+    font-size: 20px;
+    margin-bottom: 25px;
 }
 
 .supporter-description {
     font-size: 14px;
     margin-top: 20px;
+    line-height: 24px;
 }
 
 .supporter-img-mobile {
@@ -849,6 +895,14 @@ table tr.highlight td {
     padding-bottom: 60px;
 }
 
+.public-relation-support-bottom-container {
+    display: flex;
+/*    gap: 120px;*/
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
 .public-relation-support-primary-title,
 .public-relation-support-secondary-title {
     width: 30%;
@@ -862,6 +916,7 @@ table tr.highlight td {
 .public-relation-support-primary-title p:nth-child(1),
 .public-relation-support-secondary-title p:nth-child(1) {
     font-size: 20px;
+    margin-bottom: 25px;
 }
 
 .public-relation-support-primary-title p:nth-child(2),
@@ -879,6 +934,7 @@ table tr.highlight td {
 .public-relation-support-item-title p:nth-child(1),
 .public-relation-support-item-description {
     font-size: 14px;
+    margin-bottom: 30px;
 }
 
 .public-relation-support-item-title p:nth-child(2) {
@@ -898,7 +954,11 @@ table tr.highlight td {
 }
 
 #footer {
-    padding: 120px 200px 80px 320px;
+    padding: 90px 200px 80px 320px;
+}
+
+img.footer-img {
+    width: 200px;
 }
 
 .footer-list-item {
