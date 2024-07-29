@@ -310,7 +310,7 @@
                             <p class="sawarabi-gothic">ジャーナリスト／
                                 新潟国際アニメーション映画祭
                                 プログラムディレクター</p>
-                            <p class="sawarabi-gothic" id="openPopupBtn4" tyle="text-decoration: underline; cursor: pointer;">プロフィールを見る
+                            <p class="sawarabi-gothic" id="openPopupBtn4" style="text-decoration: underline; cursor: pointer;">プロフィールを見る
                             </p>
                         </div>
                         <img src="./assets/advisor-4.png" width="360px">
@@ -643,7 +643,7 @@
                         viewBox="0 0 61.18 45.61">
                         <defs>
                             <style>
-                                .cls-1 {
+                                .closePopup {
                                     fill: none;
                                     stroke: #000;
                                     stroke-miterlimit: 10;
@@ -651,8 +651,8 @@
                                 }
                             </style>
                         </defs>
-                        <line class="cls-1" x1=".59" y1="44.81" x2="60.59" y2=".81" />
-                        <line class="cls-1" x1="60.59" y1="44.81" x2=".59" y2=".81" />
+                        <line class="closePopup" x1=".59" y1="44.81" x2="60.59" y2=".81" />
+                        <line class="closePopup" x1="60.59" y1="44.81" x2=".59" y2=".81" />
                     </svg>
                     close
                 </div>
@@ -681,7 +681,7 @@
                         viewBox="0 0 61.18 45.61">
                         <defs>
                             <style>
-                                .cls-1 {
+                                .closePopup {
                                     fill: none;
                                     stroke: #000;
                                     stroke-miterlimit: 10;
@@ -689,8 +689,8 @@
                                 }
                             </style>
                         </defs>
-                        <line class="cls-1" x1=".59" y1="44.81" x2="60.59" y2=".81" />
-                        <line class="cls-1" x1="60.59" y1="44.81" x2=".59" y2=".81" />
+                        <line class="closePopup" x1=".59" y1="44.81" x2="60.59" y2=".81" />
+                        <line class="closePopup" x1="60.59" y1="44.81" x2=".59" y2=".81" />
                     </svg>
                     close
                 </div>
@@ -724,7 +724,7 @@
                         viewBox="0 0 61.18 45.61">
                         <defs>
                             <style>
-                                .cls-1 {
+                                .closePopup {
                                     fill: none;
                                     stroke: #000;
                                     stroke-miterlimit: 10;
@@ -732,8 +732,8 @@
                                 }
                             </style>
                         </defs>
-                        <line class="cls-1" x1=".59" y1="44.81" x2="60.59" y2=".81" />
-                        <line class="cls-1" x1="60.59" y1="44.81" x2=".59" y2=".81" />
+                        <line class="closePopup" x1=".59" y1="44.81" x2="60.59" y2=".81" />
+                        <line class="closePopup" x1="60.59" y1="44.81" x2=".59" y2=".81" />
                     </svg>
                     close
                 </div>
@@ -766,7 +766,7 @@
                         viewBox="0 0 61.18 45.61">
                         <defs>
                             <style>
-                                .cls-1 {
+                                .closePopup {
                                     fill: none;
                                     stroke: #000;
                                     stroke-miterlimit: 10;
@@ -774,8 +774,8 @@
                                 }
                             </style>
                         </defs>
-                        <line class="cls-1" x1=".59" y1="44.81" x2="60.59" y2=".81" />
-                        <line class="cls-1" x1="60.59" y1="44.81" x2=".59" y2=".81" />
+                        <line class="closePopup" x1=".59" y1="44.81" x2="60.59" y2=".81" />
+                        <line class="closePopup" x1="60.59" y1="44.81" x2=".59" y2=".81" />
                     </svg>
                     close
                 </div>
@@ -811,7 +811,7 @@
                             <style>
                                 .cls-1 {
                                     fill: none;
-                                    stroke: black;
+                                    stroke: white;
                                     stroke-miterlimit: 10;
                                     stroke-width: 2px;
                                 }
@@ -824,7 +824,7 @@
                 </div>
                 <div class="menu-list-container">
                     <div class="menu-list">
-                        <div class="menu-item" onclick="closeMenu()">
+                        <div class="menu-item" onclick="closeMenuAndScrollTo('new-section')">
                             <div class="menu-item-title">
                                 <p>お知らせ</p>
                                 <p>News</p>
@@ -833,7 +833,7 @@
                                 <img src="./assets/menu-go-next.svg">
                             </div>
                         </div>
-                        <div class="menu-item" onclick="closeMenu()">
+                        <div class="menu-item" onclick="closeMenuAndScrollTo('advisor-section')">
                             <div class="menu-item-title">
                                 <p>プログラム指導者</p>
                                 <p>Program Advisors</p>
@@ -842,7 +842,7 @@
                                 <img src="./assets/menu-go-next.svg">
                             </div>
                         </div>
-                        <div class="menu-item" onclick="closeMenu()">
+                        <div class="menu-item" onclick="closeMenuAndScrollTo('goal-section')">
                             <div class="menu-item-title">
                                 <p>プロジェクト趣旨</p>
                                 <p>Project Goals</p>
@@ -851,7 +851,7 @@
                                 <img src="./assets/menu-go-next.svg">
                             </div>
                         </div>
-                        <div class="menu-item" onclick="closeMenu()">
+                        <div class="menu-item" onclick="closeMenuAndScrollTo('faq-section')">
                             <div class="menu-item-title">
                                 <p>よくある質問</p>
                                 <p>FAQ</p>
@@ -860,7 +860,7 @@
                                 <img src="./assets/menu-go-next.svg">
                             </div>
                         </div>
-                        <div class="menu-item" onclick="closeMenu()">
+                        <div class="menu-item" onclick="closeMenuAndScrollTo('requirement-section')">
                             <div class="menu-item-title">
                                 <p>応募条件</p>
                                 <p>Application Requirements</p>
@@ -869,7 +869,7 @@
                                 <img src="./assets/menu-go-next.svg">
                             </div>
                         </div>
-                        <div class="menu-item" onclick="closeMenu()">
+                        <div class="menu-item" onclick="closeMenuAndScrollTo('organization-member-section')">
                             <div class="menu-item-title">
                                 <p>事業団体とメンバー</p>
                                 <p>Organizations & Members</p>

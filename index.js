@@ -88,59 +88,68 @@ document.getElementById('closeMenuBtn').addEventListener('click', function () {
   }, 500); // Match the duration of the CSS transition
 });
 
-function closeMenu() {
+function closeMenuAndScrollTo(id) {
   const menuPopup = document.getElementById('menuPopup');
   menuPopup.classList.remove('show');
   setTimeout(() => {
     menuPopup.style.display = 'none';
   }, 500); // Match the duration of the CSS transition
+
+  const yOffset = -120;
+  const element = document.getElementById(id);
+  const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+  window.scrollTo({ top: y, behavior: 'smooth' });
+  // document.getElementById(id).scrollIntoView({
+  //   behavior: 'smooth'
+  // });
 }
 
 // Additional popups added by Hiro
-document.getElementById('openPopupBtn2').addEventListener('click', function() {
+document.getElementById('openPopupBtn2').addEventListener('click', function () {
   const popup = document.getElementById('popup2');
   popup.style.display = 'flex';
   setTimeout(() => {
-      popup.classList.add('show');
+    popup.classList.add('show');
   }, 10); // Delay to ensure display is set before adding the show class
 });
 
-document.getElementById('closePopupBtn2').addEventListener('click', function() {
+document.getElementById('closePopupBtn2').addEventListener('click', function () {
   const popup = document.getElementById('popup2');
   popup.classList.remove('show');
   setTimeout(() => {
-      popup.style.display = 'none';
+    popup.style.display = 'none';
   }, 500); // Match the duration of the CSS transition
 });
 
-document.getElementById('openPopupBtn3').addEventListener('click', function() {
+document.getElementById('openPopupBtn3').addEventListener('click', function () {
   const popup = document.getElementById('popup3');
   popup.style.display = 'flex';
   setTimeout(() => {
-      popup.classList.add('show');
+    popup.classList.add('show');
   }, 10); // Delay to ensure display is set before adding the show class
 });
 
-document.getElementById('closePopupBtn3').addEventListener('click', function() {
+document.getElementById('closePopupBtn3').addEventListener('click', function () {
   const popup = document.getElementById('popup3');
   popup.classList.remove('show');
   setTimeout(() => {
-      popup.style.display = 'none';
+    popup.style.display = 'none';
   }, 500); // Match the duration of the CSS transition
 });
 
-document.getElementById('openPopupBtn4').addEventListener('click', function() {
+document.getElementById('openPopupBtn4').addEventListener('click', function () {
   const popup = document.getElementById('popup4');
   popup.style.display = 'flex';
   setTimeout(() => {
-      popup.classList.add('show');
+    popup.classList.add('show');
   }, 10); // Delay to ensure display is set before adding the show class
 });
 
-document.getElementById('closePopupBtn4').addEventListener('click', function() {
+document.getElementById('closePopupBtn4').addEventListener('click', function () {
   const popup = document.getElementById('popup4');
   popup.classList.remove('show');
   setTimeout(() => {
-      popup.style.display = 'none';
+    popup.style.display = 'none';
   }, 500); // Match the duration of the CSS transition
 });
