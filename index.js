@@ -29,6 +29,7 @@ function scrollToTop() {
     behavior: 'smooth'
   });
 }
+
 document.getElementById('openPopupBtn').addEventListener('click', function () {
   const popup = document.getElementById('popup');
   popup.style.display = 'flex';
@@ -62,13 +63,22 @@ document.getElementById('closePopupBtn2').addEventListener('click', function () 
   }, 500); // Match the duration of the CSS transition
 });
 
-document.getElementById('hamburgur').addEventListener('click', function () {
+document.getElementById('hamburgur1').addEventListener('click', function () {
   const menuPopup = document.getElementById('menuPopup');
   menuPopup.style.display = 'flex';
   setTimeout(() => {
     menuPopup.classList.add('show');
   }, 10); // Delay to ensure display is set before adding the show class
 });
+
+document.getElementById('hamburgur2').addEventListener('click', function () {
+  const menuPopup = document.getElementById('menuPopup');
+  menuPopup.style.display = 'flex';
+  setTimeout(() => {
+    menuPopup.classList.add('show');
+  }, 10); // Delay to ensure display is set before adding the show class
+});
+
 
 document.getElementById('closeMenuBtn').addEventListener('click', function () {
   const menuPopup = document.getElementById('menuPopup');
@@ -77,3 +87,11 @@ document.getElementById('closeMenuBtn').addEventListener('click', function () {
     menuPopup.style.display = 'none';
   }, 500); // Match the duration of the CSS transition
 });
+
+function closeMenu() {
+  const menuPopup = document.getElementById('menuPopup');
+  menuPopup.classList.remove('show');
+  setTimeout(() => {
+    menuPopup.style.display = 'none';
+  }, 500); // Match the duration of the CSS transition
+}
