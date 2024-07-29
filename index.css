@@ -1000,7 +1000,7 @@ img.footer-img {
 .go-to-top {
     position: fixed;
     width: 70px;
-    bottom: 490px;
+    bottom: 70px;
     right: calc((100vw - 1920px + 160px)/2);
     visibility: hidden;
     /* Start hidden */
