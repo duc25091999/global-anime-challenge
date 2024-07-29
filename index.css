@@ -2,20 +2,14 @@
 
 .hanken-grotesk {
   font-family: "Hanken Grotesk", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
 }
 
-.shippori-antique-regular {
+.shippori-antique {
   font-family: "Shippori Antique", sans-serif;
-  font-weight: 400;
-  font-style: normal;
 }
 
-.sawarabi-gothic-regular {
+.sawarabi-gothic {
   font-family: "Sawarabi Gothic", sans-serif;
-  font-weight: 400;
-  font-style: normal;
 }
 
 
@@ -618,9 +612,6 @@ table tr.highlight td {
     gap: 24px
 }
 
-.news-content-time {
-    margin-top: 8px;
-}
 
 .news-border {
     border: none;
@@ -937,7 +928,7 @@ table tr.highlight td {
         transform: translateY(-100%);
     }
 } */
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 431px) {
     #loader-wrapper img {
         max-width: 152px;
     }
