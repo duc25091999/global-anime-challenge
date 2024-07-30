@@ -157,3 +157,4 @@ document.getElementById('closePopupBtn4').addEventListener('click', function () 
     popup.style.display = 'none';
   }, 500); // Match the duration of the CSS transition
 });
+

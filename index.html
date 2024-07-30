@@ -8,22 +8,30 @@
     <link rel="stylesheet" href="./index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="./assets/logo.png">
+    <!-- Meta tags for SEO -->
+    <meta name="description" content="Brief description of your website">
+    <meta name="keywords" content="relevant, keywords, for, your, website">
     <link
         href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Sawarabi+Gothic&family=Shippori+Antique&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
+    <div class="side-text-container">
+        <div class="sideContsWrap">
+            <div class="sideConts--loop"></div>
+            <div class="sideConts--loop"></div>
+        </div>
+    </div>
     <div class="navbar" id="navbar">
         <div class="navbar-container">
             <div class="menu-text" style="opacity: 0;">
-                <img src="./assets/hamburgur.png" alt="Global Anime Challenge">
-                <p>menu</p>
+                <img src="./assets/menu.svg">
             </div>
             <img class="menu-icon" src="./assets/logo.png">
-            <div class="menu-text" id="hamburgur1" style="cursor: pointer;">
-                <img src="./assets/hamburgur.png" alt="Global Anime Challenge">
-                <p>menu</p>
+            <div class="menu-text hamburgur-menu" id="hamburgur1" style="cursor: pointer;">
+                <img src="./assets/menu.svg">
             </div>
         </div>
     </div>
@@ -34,7 +42,7 @@
         <img id="goToTopBtn" class="go-to-top" src="./assets/scroll-to-top-btn.svg" onclick="scrollToTop()">
         <section id="homepage-section">
             <div class="absolute-top-left d-flex h-100 flex-direction-column">
-                <img class="content-title" src="./assets/title.png" alt="Global Anime Challenge">
+                <img class="content-title" src="./assets/title.svg" alt="Global Anime Challenge">
                 <!--                 <div class="floating-logo">
                     <img src="./assets/section-1.png" alt="Global Anime Challenge">
                 </div> -->
@@ -43,8 +51,7 @@
                 <img src="./assets/section-1.png" alt="Global Anime Challenge">
             </div> -->
             <div class="absolute-top-right hamburgur-menu" id="hamburgur2">
-                <img src="./assets/hamburgur.png" alt="Global Anime Challenge">
-                <p>menu</p>
+                <img src="./assets/menu.svg">
             </div>
             <div class="absolute-center" style="display: flex; align-items: center; justify-content: center;"">
                 <img class=" spinning spinning-logo" src="./assets/logo.png" alt="Global Anime Challenge">
@@ -62,41 +69,18 @@
                 <img width="40px" src="./assets/arrow-down.png" alt="Scroll down">
             </div>
             <div class="scroll-logo">
-                <div class="d-flex" style="gap: 80px;">
+                <div class="d-flex" style="gap: 80px; align-items: center;">
                     <img height="80px" src="./assets/small-open-bracket.svg">
-                    <p style="align-content: center; font-size: 24px;" class="bold hanken-grotesk">scroll</p>
+                    <img height="17px" src="./assets/scroll-text.svg">
                     <img height="80px" src="./assets/small-close-bracket.svg">
                 </div>
                 <img width="100px" src="./assets/arrow-down.png" alt="Scroll down">
             </div>
         </section>
         <section id="step-out-section">
-            <p class="color-primary step-out-title hanken-grotesk">Step out to
-                inspire the Creative</p>
-            <div class="d-flex step-out-description">
-                <div class="d-flex shippori-antique">
-                    <div class="vertical-text color-primary" style="font-size: 52px;">
-                        <p>クリエイティブ</p>
-                    </div>
-                    <div class="vertical-text color-primary" style="font-size: 52px;">
-                        <p>芽吹く</p>
-                    </div>
-                    <div class="vertical-text color-primary" style="font-size: 52px;">
-                        <p>一歩飛び出し</p>
-                    </div>
-                </div>
-                <div class="d-flex step-out-content">
-                    <div>
-                        <img class="open-bracket" src="./assets/big-open-bracket.png">
-                    </div>
-                    <div>
-                        <img class="quote" src="./assets//step-out-quote.svg">
-                    </div>
-                    <div>
-                        <img class="close-bracket" src="./assets/big-close-bracket.png">
-                    </div>
-                </div>
-            </div>
+            <img class="desktop" width="100%" src="./assets/step-out-creative.svg">
+            <img class="mobile" width="100%" src="./assets/step-out-creative-mobile.svg">
+
             <hr class="step-out-border">
         </section>
         <section id="new-section">
@@ -288,7 +272,8 @@
                             <br />
                             <p class="sawarabi-gothic">株式会社KADOKAWA執行役／
                                 Chief Anime Officer</p>
-                            <p class="sawarabi-gothic" id="openPopupBtn2" style="text-decoration: underline;cursor: pointer;">プロフィールを見る
+                            <p class="sawarabi-gothic" id="openPopupBtn2"
+                                style="text-decoration: underline;cursor: pointer;">プロフィールを見る
                             </p>
                         </div>
                         <img src="./assets/advisor-2.png">
@@ -296,12 +281,13 @@
                     <hr>
                     <div class="advisor-item">
                         <div>
-                            <p class="sawarabi-gothic">櫻井大樹／サクライダイジュ</p>
-                            <p class="hanken-grotesk">SAKURAI Daiju</p>
+                            <p class="sawarabi-gothic">櫻井大樹／サクライタイキ</p>
+                            <p class="hanken-grotesk">SAKURAI Taiki</p>
                             <br />
                             <p class="sawarabi-gothic">株式会社サラマンダー代表取締役社長／
                                 アニメプロデューサー・脚本家ー</p>
-                            <p class="sawarabi-gothic" id="openPopupBtn3" style="text-decoration: underline;cursor: pointer;">プロフィールを見る
+                            <p class="sawarabi-gothic" id="openPopupBtn3"
+                                style="text-decoration: underline;cursor: pointer;">プロフィールを見る
                             </p>
                         </div>
                         <img src="./assets/advisor-3.png">
@@ -469,7 +455,7 @@
                         </div>
                     </div>
                 </div>
-                <hr class="organization-vertical-border" >
+                <hr class="organization-vertical-border">
                 <div class="supporter-container">
                     <div class="d-flex" style="flex-direction: column; justify-content: space-between;">
                         <div class="supporter-title-primary">
@@ -642,7 +628,8 @@
                                             stroke: #aa1e14;
                                         }
                                     </style>
-                                    <polyline class="red-stroke" points="11.5 6.92 .5 6.92 .5 28.92 22.5 28.92 22.5 17.92" />
+                                    <polyline class="red-stroke"
+                                        points="11.5 6.92 .5 6.92 .5 28.92 22.5 28.92 22.5 17.92" />
                                     <g>
                                         <line class="red-stroke" x1="11.53" y1="17.92" x2="28.97" y2=".48" />
                                         <path class="red-stroke" d="M29.06,.46c-3.44,3.44-3.44,9.02,0,12.46" />
@@ -764,8 +751,8 @@
                 <img src="./assets/advisor-3.png" height="400px">
                 <div class="d-flex" style="flex-direction: column;justify-content: space-between;">
                     <div class="d-flex" style="justify-content: space-between;">
-                        <p>櫻井大樹／サクライダイジュ</p>
-                        <p>SAKURAI Daiju</p>
+                        <p>櫻井大樹／サクライタイキ</p>
+                        <p>SAKURAI Taiki</p>
                     </div>
                     <div>
                         <p>株式会社サラマンダー代表取締役社長／</p>
@@ -825,27 +812,12 @@
         </div>
         <div id="menuPopup" class="menuPopup" style="color: white;">
             <div class="menuPopup-content">
-                <img class="logo-with-text-white" src="./assets/logo-with-text-white.png">
+                <img class="logo-with-text-white" src="./assets/logo-with-text-white.svg">
                 <!-- <img class="menu-label-white" src="./assets/menu-label-white.png"> -->
                 <img class="menu-label-white-2" src="./assets/menu-label-white-2.svg">
                 <img class="menu-label-white-2-mobile" src="./assets/menu-label-white-2-mobile.svg">
                 <div id="closeMenuBtn" class="close-btn" style="color:white;">
-                    <svg id="Isolation_Mode" data-name="Isolation Mode" xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 61.18 45.61">
-                        <defs>
-                            <style>
-                                .cls-1 {
-                                    fill: none;
-                                    stroke: white;
-                                    stroke-miterlimit: 10;
-                                    stroke-width: 2px;
-                                }
-                            </style>
-                        </defs>
-                        <line class="cls-1" x1=".59" y1="44.81" x2="60.59" y2=".81" />
-                        <line class="cls-1" x1="60.59" y1="44.81" x2=".59" y2=".81" />
-                    </svg>
-                    close
+                    <img src="./assets/close-menu-btn.svg">
                 </div>
                 <div class="menu-list-container">
                     <div class="menu-list">
@@ -911,11 +883,21 @@
                             <p class="shippori-antique">お問い合わせ
                             </p>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.41 29.42">
-                                <polyline class="cls-1" points="11.5 6.92 .5 6.92 .5 28.92 22.5 28.92 22.5 17.92" />
+                                <defs>
+                                    <style>
+                                        .white-stroke {
+                                            fill: none;
+                                            stroke: white;
+                                            stroke-miterlimit: 10;
+                                        }
+                                    </style>
+                                </defs>
+                                <polyline class="white-stroke"
+                                    points="11.5 6.92 .5 6.92 .5 28.92 22.5 28.92 22.5 17.92" />
                                 <g>
-                                    <line class="cls-1" x1="11.53" y1="17.92" x2="28.97" y2=".48" />
-                                    <path class="cls-1" d="M29.06,.46c-3.44,3.44-3.44,9.02,0,12.46" />
-                                    <path class="cls-1" d="M28.96,.35c-3.44,3.44-9.02,3.44-12.46,0" />
+                                    <line class="white-stroke" x1="11.53" y1="17.92" x2="28.97" y2=".48" />
+                                    <path class="white-stroke" d="M29.06,.46c-3.44,3.44-3.44,9.02,0,12.46" />
+                                    <path class="white-stroke" d="M28.96,.35c-3.44,3.44-9.02,3.44-12.46,0" />
                                 </g>
                             </svg>
                         </div>
