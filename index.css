@@ -1568,6 +1568,7 @@ img.footer-img {
 
     .requirement-list {
         font-size: 10px;
+        line-height: 20px;
     }
 
     .requirement-item {
@@ -1976,7 +1977,7 @@ img.footer-img {
 
     .go-to-top {
         width: 25px;
-        bottom: 520px;
+        bottom: 25px;
         right: 0;
     }
 
