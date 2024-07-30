@@ -867,7 +867,7 @@ table tr.highlight td {
 .supporter-container {
     display: flex;
     background-color: white;
-    padding: 100px 117px;
+    padding: 80px 100px;
     justify-content: space-between;
     gap: 120px;
     margin-top: 50px;
