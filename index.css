@@ -576,7 +576,7 @@ table tr.highlight td {
     border: none;
     height: 2px;
     background-color: #AA1E14;
-    margin-top: 240px;
+    margin-top: 160px;
 }
 
 #new-section,
@@ -1116,6 +1116,9 @@ img.footer-img {
 }
 
 @media screen and (max-width: 1741px) {
+    .goal-label img{
+        max-width: 288px;
+    }
     .spinning-logo {
         max-width: 50%;
     }
