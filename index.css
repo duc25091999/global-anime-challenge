@@ -1074,6 +1074,12 @@ img.footer-img {
     color: #000 !important;
 }
 
+@media screen and (max-width: 1930px) {
+    .go-to-top {
+        right: 80px;
+    }
+}
+
 @media screen and (max-width: 1873px) {
     .supporter-container {
         gap: 60px
@@ -1172,6 +1178,7 @@ img.footer-img {
     .spinning-logo {
         max-width: 100%;
     }
+
     #loader-wrapper img {
         max-width: 152px;
     }
