@@ -45,16 +45,16 @@ h2 {
     width: 0;
 }
 
+#closeMenuBtn img {
+    width: 60px;
+}
+
 /* this is for side text slider */
 .side-text-container {
     position: absolute;
     left: 80px;
     top: 100vh;
     display: unset
-}
-
-#closeMenuBtn img {
-    width: 60px;
 }
 
 .sideContsWrap {
@@ -68,24 +68,20 @@ h2 {
     flex-direction: column;
     flex-wrap: wrap;
     margin-left: 15px;
-}
-
-.sideContsWrap {
-    height: 150vh;
     margin-left: 0px;
-    position: sticky;
-    top: 0;
-    left: 0;
     overflow: hidden;
 }
 
 .sideConts--loop {
-    background: url(./assets/text-side-pc.svg) 0 0 repeat-y;
-    background-size: contain;
-    height: 50%;
+    display: flex;
+    flex-direction: column;
     position: relative;
-    width: 57px;
     z-index: 0
+}
+
+.sideConts--loop img {
+    width: 36px;
+    margin-bottom: 46px;
 }
 
 .sideConts--loop:first-of-type {
@@ -1319,42 +1315,23 @@ img.footer-img {
 
     /* this is for side text slider */
     .side-text-container {
-        position: absolute;
-        left: 80px;
-        top: 100vh;
-        display: none
+        left: 15px;
     }
 
-    .sideContsWrap {
-        height: 2272px;
-        margin-left: 1px
+    .sideConts--loop img {
+        width: 10px;
+        margin-bottom: 14px;
     }
 
-    .sideContsWrap {
-        height: 605.86667vw;
-        margin-left: .26667vw
-    }
+    /* .sideConts--loop:first-of-type {
+    -webkit-animation: logoloop1tb 60s linear -30s infinite;
+    animation: logoloop1tb 60s linear -30s infinite
+}
 
-    .sideConts--loop {
-        background-image: url(../img/common/text_sidearea-sp.svg);
-        height: 1136px;
-        width: 30px
-    }
-
-    .sideConts--loop {
-        height: 302.93333vw;
-        width: 8vw
-    }
-
-    .sideConts--loop:first-of-type {
-        -webkit-animation: logoloop1tb 90s linear -45s infinite;
-        animation: logoloop1tb 90s linear -45s infinite
-    }
-
-    .sideConts--loop:last-of-type {
-        -webkit-animation: logoloop2tb 90s linear infinite;
-        animation: logoloop2tb 90s linear infinite
-    }
+.sideConts--loop:last-of-type {
+    -webkit-animation: logoloop2tb 60s linear infinite;
+    animation: logoloop2tb 60s linear infinite
+} */
 
     /* this is for side text slider */
 
@@ -2033,12 +2010,15 @@ img.footer-img {
     .public-relation-support-secondary-title p:nth-child(1) {
         margin-bottom: 0px;
     }
+
     .public-relation-support-item-title p:nth-child(1) {
         margin-bottom: 0px;
     }
+
     .public-relation-support-item-description {
         line-height: 20px;
     }
+
     .public-relation-support-secondary-title p:nth-child(2) {
         line-height: 24px;
     }

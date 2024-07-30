@@ -1,10 +1,27 @@
 document.addEventListener("DOMContentLoaded", function (event) {
+  const stickyElement = document.getElementById('sticky-element');
+  var rect = stickyElement.getBoundingClientRect();
+  var scrollTop = window.scrollY || window.pageYOffset;
+  var distanceFromTop = rect.top + scrollTop;
   function hidePreloader() {
     var preloader = document.querySelector("#loader-wrapper");
     preloader.style.opacity = 0;
     preloader.style.zIndex = -99;
   }
   setTimeout(hidePreloader, 2000);
+  document.addEventListener('scroll', function () {
+    //when sticky element touch top of the browers => make it fixed
+    const rect = stickyElement.getBoundingClientRect();
+    if (rect.top <= 0) {
+      stickyElement.style.position = 'fixed';
+      stickyElement.style.top = '0';
+    } else {
+      stickyElement.style.position = 'static';
+    }
+    if (window.scrollY <= distanceFromTop) {
+      stickyElement.style.position = 'static';
+    }
+  });
 })
 
 window.addEventListener('scroll', function () {
