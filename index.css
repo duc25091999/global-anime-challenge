@@ -124,7 +124,7 @@ h2 {
 }
 
 .content {
-    margin: 80px 80px 0px;
+    margin: 80px 80px 0px 80px;
 }
 
 .content section {
@@ -140,19 +140,19 @@ h2 {
 .absolute-top-left {
     position: absolute;
     top: 0;
-    left: 80px;
+    left: 0px;
 }
 
 .absolute-top-right {
     position: absolute;
     top: 0;
-    right: 80px;
+    right: 0px;
 }
 
 .absolute-bottom-right {
     position: absolute;
     bottom: 0;
-    right: 80px;
+    right: 0px;
 }
 
 .absolute-bottom-left {
@@ -564,11 +564,11 @@ table tr.highlight td {
 }
 
 .quote {
-    max-width: 385px;
+    width: 385px;
 }
 
 .step-out-content {
-    gap: 160px;
+    gap: 80px;
     align-items: center;
 }
 
@@ -600,7 +600,10 @@ table tr.highlight td {
 }
 
 .goal-section-container,
-.faq-section-container {
+.faq-section-container,
+.requirement-section-container,
+.new-section-container,
+.advior-section-container {
     gap: 80px;
 }
 
@@ -1003,6 +1006,10 @@ img.footer-img {
     padding-right: 40px;
 }
 
+.spinning-logo {
+    max-width: 80%;
+}
+
 .footer-item {
     width: 50%;
     cursor: pointer;
@@ -1095,25 +1102,47 @@ img.footer-img {
     .public-relation-support-secondary-title p:nth-child(2) {
         font-size: 14px;
     }
-    .step-out-title{
+
+    .step-out-title {
         font-size: 70px;
     }
 
 }
 
-@media screen and (max-width: 1736px) {
-    .menu-list-container{
-        padding-bottom: 100px;
-        max-width: 500px;
+@media screen and (max-width: 1741px) {
+    .spinning-logo {
+        max-width: 50%;
     }
+
+    .menu-list-container {
+        padding-bottom: 100px;
+        right: 160px;
+        /* max-width: 500px; */
+    }
+
     .menu-item::after {
         bottom: -25px;
     }
+
     .menu-list {
-        gap: 50px;
+        justify-content: space-between;
+        gap: 0px;
     }
+
     .menu-item {
-        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .logo-with-text-white {
+        max-width: 200px;
+    }
+
+    .menu-item-title p:nth-child(1) {
+        font-size: 20px;
+    }
+
+    .menu-item-title p:nth-child(2) {
+        font-size: 16px;
     }
 
     .organization-member-item-title-primary p:nth-child(1) {
@@ -1127,12 +1156,22 @@ img.footer-img {
     .organization-member-item-title-secondary {
         font-size: 18px;
     }
-    .step-out-title{
+
+    .step-out-title {
         font-size: 66px;
     }
 }
 
+@media screen and (max-width: 1534px) {
+    .step-out-title {
+        font-size: 50px;
+    }
+}
+
 @media screen and (max-width: 431px) {
+    .spinning-logo {
+        max-width: 100%;
+    }
     #loader-wrapper img {
         max-width: 152px;
     }
@@ -1214,7 +1253,7 @@ img.footer-img {
     }
 
     .quote {
-        max-width: 158px;
+        width: 158px;
     }
 
     .step-out-content {
@@ -1232,7 +1271,10 @@ img.footer-img {
     }
 
     .goal-section-container,
-    .faq-section-container {
+    .faq-section-container,
+    .requirement-section-container,
+    .new-section-container,
+    .advior-section-container {
         gap: 0px;
     }
 
@@ -1695,6 +1737,7 @@ img.footer-img {
 
     .menu-item {
         width: 100%;
+        margin-bottom: 0px;
     }
 
     .menu-item::after {
