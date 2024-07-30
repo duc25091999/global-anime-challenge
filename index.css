@@ -1224,6 +1224,12 @@ img.footer-img {
     #footer {
         padding: 80px 80px 0px 180px;
     }
+
+    .scroll-logo {
+        transform: scale(0.6);
+        left: 190px;
+        bottom: -18px;
+    }
 }
 
 @media screen and (max-width: 431px) {
