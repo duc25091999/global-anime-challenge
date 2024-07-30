@@ -936,7 +936,6 @@ table tr.highlight td {
 
 .public-relation-support-bottom-container {
     display: flex;
-    /*    gap: 120px;*/
     justify-content: space-between;
     padding-top: 60px;
     padding-bottom: 60px;
@@ -1076,6 +1075,17 @@ img.footer-img {
 
 .black-hover-link:hover p {
     color: #000 !important;
+}
+
+.organization-hozontal-border {
+    width: 1px;
+    background-color: #B4B4B4;
+}
+
+.organization-vertical-border {
+    border: none;
+    height: 1px;
+    background-color: #B4B4B4;
 }
 
 @media screen and (max-width: 1930px) {
@@ -1350,7 +1360,7 @@ img.footer-img {
     .faq-section-container,
     .footer-container {
         flex-direction: column;
-        padding: 0px 0px 0px 25px;
+        padding: 0px;
     }
 
     .new-section-header,
@@ -1557,10 +1567,10 @@ img.footer-img {
     }
 
     .organization-member-list {
-        gap: 25px;
+        gap: 35px;
         flex-direction: column;
         padding-top: 35px;
-        padding-bottom: 0px;
+        padding-bottom: 35px;
     }
 
     .organization-member-item {
@@ -1597,19 +1607,17 @@ img.footer-img {
 
     .organization-member-item-image {
         justify-content: center;
-        margin-top: 40px;
-        margin-bottom: 40px;
+        margin-top: 20px;
+        margin-bottom: 20px;
         height: 60px;
-        align-items: center;
-    }
-
-    .organization-member-item-image {
         min-height: 60px;
     }
 
     .organization-member-item-image img {
         max-height: 60px;
         max-width: 100%;
+        height: auto;
+        width: auto;
     }
 
     .supporter-container {
@@ -1695,6 +1703,7 @@ img.footer-img {
     .public-relation-support-item-divider {
         width: 100%;
         height: 1px;
+        margin-bottom: 30px;
     }
 
     .organization-member-section-border {
@@ -1879,7 +1888,16 @@ img.footer-img {
         right: 0;
     }
 
+    .organization-hozontal-border {
+        width: 100%;
+        height: 1px;
+    }
 
+    .public-relation-support-bottom-container {
+        padding-top: 25px;
+        padding-bottom: 30px;
+        flex-direction: column;
+    }
 }
 
 @keyframes spin {
