@@ -15,9 +15,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     if (rect.top <= 0) {
       stickyElement.style.position = 'fixed';
       stickyElement.style.top = '0';
-    } else {
-      stickyElement.style.position = 'static';
-    }
+    } 
     if (window.scrollY <= distanceFromTop) {
       stickyElement.style.position = 'static';
     }
