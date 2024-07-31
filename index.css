@@ -1170,6 +1170,9 @@ img.footer-img {
     width: 25px;
     margin-left: 8px;
 }
+.footer-text-img{
+    width: 666px;
+}
 
 @media screen and (max-width: 1930px) {
     .go-to-top {
@@ -1339,6 +1342,9 @@ img.footer-img {
         transform: scale(0.6);
         left: 190px;
         bottom: -18px;
+    }
+    .footer-text-img{
+        width: 500px;
     }
 }
 
@@ -1846,7 +1852,7 @@ img.footer-img {
         padding: 25px 0px 25px 35px;
     }
 
-    .footer-img {
+    img.footer-img {
         max-width: 124px;
         margin: 25px auto 0px;
     }
