@@ -86,12 +86,14 @@ h2 {
 
 .sideConts--loop:first-of-type {
     -webkit-animation: logoloop1tb 60s linear -30s infinite;
-    animation: logoloop1tb 60s linear -30s infinite
+    animation: logoloop1tb 60s linear -30s infinite;
+    animation-direction: reverse;
 }
 
 .sideConts--loop:last-of-type {
     -webkit-animation: logoloop2tb 60s linear infinite;
-    animation: logoloop2tb 60s linear infinite
+    animation: logoloop2tb 60s linear infinite;
+    animation-direction: reverse;
 }
 
 /* this is for side text slider */
